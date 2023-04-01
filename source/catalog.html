@@ -165,6 +165,60 @@
       </a>
     </div>
   </footer>
+  <div class="modal__overlay">
+    <div class="modal">
+      <section class="cart-adding modal__content">
+        <h3 class="cart-adding__title">Добавить в корзину</h3>
+        <p class="cart-adding__text"></p>
+        <form class="cart-adding__form"
+              action="#"
+              method="post"
+        >
+          <fieldset class="cart-adding__group">
+            <legend class="cart-adding__heading">Выберите размер:</legend>
+            <ul class="cart-adding__list">
+              <li class="cart-adding__item">
+                <label class="cart-adding__control control">
+                  <input class="control__input visually-hidden"
+                         type="radio"
+                         name="product-size"
+                         value="S"
+                         checked
+                  >
+                  <span class="control__mark control__mark--radio"></span>
+                  <span class="control__label">S</span>
+                </label>
+              </li>
+              <li class="cart-adding__item">
+                <label class="cart-adding__control control">
+                  <input class="control__input visually-hidden"
+                         type="radio"
+                         name="product-size"
+                         value="M"
+                  >
+                  <span class="control__mark control__mark--radio"></span>
+                  <span class="control__label">M</span>
+                </label>
+              </li>
+
+              <li class="cart-adding__item">
+                <label class="cart-adding__control control">
+                  <input class="control__input visually-hidden"
+                         type="radio"
+                         name="product-size"
+                         value="L"
+                  >
+                  <span class="control__mark control__mark--radio"></span>
+                  <span class="control__label">L</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button button--add" type="submit">Добавить</button>
+        </form>
+      </section>
+    </div>
+  </div>
 </main>
 </body>
 </html>
