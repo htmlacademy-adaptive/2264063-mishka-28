@@ -5,13 +5,13 @@
   <title>HTML Academy: Мишка - Каталог</title>
 </head>
 <body class="page__body">
-<header class="main-header">
-  <div class="main-header__container container">
-    <a href="index.html" class="main-header__logo">
-      <img class="main-header__logo-image" src="./img/components/site-logo.svg" width="86" height="35" alt="Логотип сайта Mishka.">
+<header class="header">
+  <div class="header__container container">
+    <a class="header__logo" href="index.html">
+      <img class="header__logo-image" src="./img/components/site-logo.svg" width="86" height="35" alt="Логотип сайта Mishka.">
     </a>
-    <nav class="main-header__nav nav">
-      <button class="main-header__menu menu"><span class="visually-hidden">Открыть/Закрыть меню.</span></button>
+    <nav class="header__nav nav">
+      <button class="header__menu menu"><span class="visually-hidden">Открыть/Закрыть меню.</span></button>
       <ul class="nav__list">
         <li class="nav__item">
           <a class="nav__link">Каталог товаров</a>
@@ -19,62 +19,57 @@
         <li class="nav__item">
           <a class="nav__link" href="form.html">Вязание на заказ</a>
         </li>
-        <li class="nav__item nav__item--search">
+      </ul>
+      <ul class="nav__user-list">
+        <li class="nav__user-item nav__user-item--search">
           <a class="nav__link" href="#">Поиск по сайту</a>
         </li>
-        <li class="nav__item nav__item--cart">
+        <li class="nav__user-item nav__user-item--cart">
           <a class="nav__link" href="#">Корзина: <span>пока пуста</span></a>
         </li>
       </ul>
     </nav>
   </div>
 </header>
-<main class="page__main">
-  <section class="hero hero--form section">
-    <div class="hero__container container">
-      <h1 class="hero__title section__title">Каталог товаров</h1>
-    </div>
-  </section>
-  <section class="cards">
-    <h2 class="visually-hidden">Наши изделия, изготовленные вручную.</h2>
-    <div class="cards__container container">
-      <ul class="cards__list">
-        <li class="cards__item product">
-          <img class="product__image" src="./img/catalog/product-1.jpg" width="260" height="195" alt="Фотография изделия.">
-          <h3 class="product__title">Зайчик-попрыгайчик</h3>
-          <p class="product__text">Рост 30 см, вес 200 г</p>
-          <footer class="product__footer">
-            <b class="product__price">1 200 руб.</b>
-            <button class="product__button" type="button">
-              <span class="visually-hidden">Добавить в корзину.</span>
-            </button>
-          </footer>
-        </li>
-        <li class="cards__item product">
-          <img class="product__image" src="./img/catalog/product-2.jpg" width="260" height="195" alt="Фотография изделия.">
-          <h3 class="product__title">Корзинка для белья</h3>
-          <p class="product__text">Диаметр 15 см, высота 10 см</p>
-          <footer class="product__footer">
-            <b class="product__price">690 руб.</b>
-            <button class="product__button" type="button">
-              <span class="visually-hidden">Добавить в корзину.</span>
-            </button>
-          </footer>
-        </li>
-        <li class="cards__item product">
-          <img class="product__image" src="./img/catalog/product-3.jpg" width="260" height="195" alt="Фотография изделия.">
-          <h3 class="product__title">Большая корзинка для&nbsp;игрушек</h3>
-          <p class="product__text">Диаметр 30 см, высота 30 см</p>
-          <footer class="product__footer">
-            <b class="product__price">1 500 руб.</b>
-            <button class="product__button" type="button">
-              <span class="visually-hidden">Добавить в корзину.</span>
-            </button>
-          </footer>
-        </li>
-      </ul>
-    </div>
-  </section>
+<main class="cards page__main">
+  <div class="hero hero--form container">
+    <h1 class="hero__title">Каталог товаров</h1>
+  </div>
+  <ul class="cards__list container">
+    <li class="card">
+      <img class="card__image" src="./img/catalog/product-1.jpg" width="260" height="195" alt="Фотография изделия.">
+      <h3 class="card__title">Зайчик-попрыгайчик</h3>
+      <p class="card__text">Рост 30 см, вес 200 г</p>
+      <footer class="card__footer">
+        <b class="card__price">1 200 руб.</b>
+        <button class="card__button" type="button">
+          <span class="visually-hidden">Добавить в корзину.</span>
+        </button>
+      </footer>
+    </li>
+    <li class="card__item">
+      <img class="card__image" src="./img/catalog/product-2.jpg" width="260" height="195" alt="Фотография изделия.">
+      <h3 class="card__title">Корзинка для белья</h3>
+      <p class="card__text">Диаметр 15 см, высота 10 см</p>
+      <footer class="card__footer">
+        <b class="card__price">690 руб.</b>
+        <button class="card__button" type="button">
+          <span class="visually-hidden">Добавить в корзину.</span>
+        </button>
+      </footer>
+    </li>
+    <li class="card__item">
+      <img class="card__image" src="./img/catalog/product-3.jpg" width="260" height="195" alt="Фотография изделия.">
+      <h3 class="card__title">Большая корзинка для&nbsp;игрушек</h3>
+      <p class="card__text">Диаметр 30 см, высота 30 см</p>
+      <footer class="card__footer">
+        <b class="card__price">1 500 руб.</b>
+        <button class="card__button" type="button">
+          <span class="visually-hidden">Добавить в корзину.</span>
+        </button>
+      </footer>
+    </li>
+  </ul>
   <section class="production-process">
     <h2 class="production-process__title">Процесс производства</h2>
     <video src="#"></video>
@@ -84,7 +79,7 @@
     </p>
     <button class="production-process__button button button--primary" type="button">Сделать заказ</button>
   </section>
-  <footer class="main-footer">
+  <footer class="footer">
     <div class="container">
       <ul class="social">
         <li class="social__item">
@@ -106,14 +101,14 @@
         </li>
         <li class="social__item">
           <a class="social__link" href="#">
-            <span class="visually-hidden">Наш ютуб.</span>
+            <span class="visually-hidden">Наш телеграм.</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="23" fill="none" viewBox="0 0 28 23" aria-label="true" focusable="false">
               <path fill="currentColor" fill-rule="evenodd" d="m23.5 3.7.2.6L21 20a.7.7 0 0 1-1 .5l-8-5.3a.7.7 0 0 1 0-1l2.5-3.2-4.3 2.9h-.7l-5.2-2.6a.7.7 0 0 1 0-1.2l18.4-6.6c.2 0 .5 0 .7.2ZM6.3 10.8l3.6 1.8 7.5-5a.7.7 0 0 1 .9 1l-4.8 6 6.4 4.2 2.3-13.6-15.9 5.6Z" clip-rule="evenodd"/>
             </svg>
           </a>
         </li>
       </ul>
-      <a class="main-footer__copyright-link" href="#">Разработано
+      <a class="footer__copyright-link" href="#">Разработано
         <span class="visually-hidden">HTML Academy</span>
       </a>
     </div>
