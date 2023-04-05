@@ -2,7 +2,9 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Мишка - Каталог</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="page__body">
 <header class="header">
@@ -10,8 +12,12 @@
     <a class="header__logo" href="index.html">
       <img class="header__logo-image" src="./img/components/site-logo.svg" width="86" height="35" alt="Логотип сайта Mishka.">
     </a>
+    <button class="header__burger burger">
+      <div class="burger__item">
+        <span class="visually-hidden">Открыть/Закрыть меню.</span>
+      </div>
+    </button>
     <nav class="header__nav nav">
-      <button class="header__menu menu"><span class="visually-hidden">Открыть/Закрыть меню.</span></button>
       <ul class="nav__list">
         <li class="nav__item">
           <a class="nav__link">Каталог товаров</a>

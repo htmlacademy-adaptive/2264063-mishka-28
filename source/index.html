@@ -2,7 +2,9 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="page__body">
 <header class="header">
@@ -10,8 +12,12 @@
     <a class="header__logo">
       <img class="header__logo-image" src="./img/components/site-logo.svg" width="86" height="35" alt="Логотип сайта Mishka.">
     </a>
+    <button class="header__burger burger burger">
+      <div class="burger__item">
+        <span class="visually-hidden">Открыть/Закрыть меню.</span>
+      </div>
+    </button>
     <nav class="header__nav nav">
-      <button class="header__menu menu"><span class="visually-hidden">Открыть/Закрыть меню.</span></button>
       <ul class="nav__list">
         <li class="nav__item">
           <a class="nav__link" href="catalog.html">Каталог товаров</a>
@@ -34,23 +40,23 @@
 <main class="page__main">
   <section class="hero section">
     <div class="hero__container container">
-      <h1 class="hero__title section__title">Милые штуки ручной работы для дома</h1>
+      <h1 class="hero__title section__title">Милые штуки ручной<br>работы для дома</h1>
     </div>
-    <button class="product-toggle product-toggle--checked" type="button">
-          <span class="product-toggle__container container">
-          Предметы интерьера
-          </span>
+    <button class="product-toggle product-toggle--interior product-toggle--checked" type="button">
+      <div class="product-toggle__container container">
+        Предметы интерьера
+      </div>
     </button>
-    <button class="product-toggle" type="button">
-          <span class="product-toggle__container container">
-          Детские игрушки
-          </span>
+    <button class="product-toggle product-toggle--toys" type="button">
+      <div class="product-toggle__container container">
+        Детские игрушки
+      </div>
     </button>
   </section>
   <section class="popular-product section">
     <div class="popular-product__container container">
-      <header class="section__header">
-        <p class="section__title">Вязаные корзинки</p>
+      <header class="popular-product__header section__header">
+        <p class="popular-product__title section__title">Вязаные корзинки</p>
         <h2 class="section__subtitle">Товар недели</h2>
       </header>
       <p class="popular-product__description">
@@ -70,7 +76,7 @@
       </dl>
       <img class="popular-product__image" src="img/catalog/product-4.jpg" width="260" height="315" alt="Вязанные корзинки ручной работы.">
       <p class="popular-product__price">Цена: 990 руб.</p>
-      <a href="form.html" class="popular-product__button button button--primary">Заказать</a>
+      <a class="popular-product__button button button--primary" href="form.html">Заказать</a>
     </div>
   </section>
   <section class="about section">

@@ -1,0 +1,37 @@
+$primary-font-color: #444444;
+
+.popular-product {
+  background: url("../../../img/components/zigzag-line.svg") no-repeat bottom;
+}
+
+.popular-product__header {
+  margin-bottom: 18px;
+}
+
+.popular-product__title {
+  margin-bottom: 4px;
+}
+
+.popular-product__description {
+  margin: 0 0 18px;
+  font-size: 15px;
+  line-height: 24px;
+  color: $primary-font-color;
+}
+
+.popular-product__image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  margin: 28px 0 26px;
+}
+
+.popular-product__price {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: $primary-font-color;
+  text-align: center;
+  margin: 0 0 25px 0;
+}

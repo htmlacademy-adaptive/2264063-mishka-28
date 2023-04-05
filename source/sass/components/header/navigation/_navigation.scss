@@ -1,0 +1,37 @@
+$nav-background-color: #ffffff;
+$nav-next-color: #000000;
+$nav-border-color: #ececec;
+
+.nav {
+  box-sizing: border-box;
+  display: none;
+  flex-direction: column;
+  z-index: 10;
+  background-color: $nav-background-color;
+
+  &--active {
+    display: flex;
+  }
+}
+
+.nav__list,
+.nav__user-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__link {
+  display: block;
+  color: $nav-next-color;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  padding: 27px 30px;
+  text-align: center;
+  vertical-align: middle;
+  border-bottom: 1px solid $nav-border-color;
+}

@@ -1,0 +1,22 @@
+$primary-font-color: #444444;
+
+.button {
+  box-sizing: border-box;
+  display: inline-block;
+
+  padding: 16px;
+  min-width: 260px;
+
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+
+  &--primary {
+    background: none;
+    border: 2px solid $primary-font-color;
+    color: $primary-font-color;
+  }
+}

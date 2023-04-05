@@ -1,0 +1,17 @@
+$primary-font-color: #444444;
+$prop-border-color: #ececec;
+
+.prop {
+  display: grid;
+  grid-template-columns: 97px 1fr;
+  margin: 0;
+  font-size: 15px;
+  line-height: 20px;
+  border-bottom: 1px solid $prop-border-color;
+}
+
+.prop__item {
+  margin: 0;
+  color: $primary-font-color;
+  padding: 10px 0 15px 0;
+}
