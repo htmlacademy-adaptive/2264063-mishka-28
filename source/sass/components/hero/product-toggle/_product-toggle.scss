@@ -24,7 +24,7 @@ $prod-toggle-decor-color: #149080;
     top: 0;
     bottom: 0;
     display: block;
-    background: $prod-toggle-decor-color;
+    background-color: $prod-toggle-decor-color;
   }
 
   &--interior::after {

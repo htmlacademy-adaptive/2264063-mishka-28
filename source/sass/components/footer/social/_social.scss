@@ -1,0 +1,19 @@
+$social-border-color: #e5e5e5;
+$social-icon-color: #231f20;
+
+.social {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  column-gap: 20px;
+  padding: 25px 0 20px;
+  margin: 0;
+  list-style: none;
+  border-bottom: 1px solid $social-border-color;
+}
+
+.social__link {
+  display: block;
+  padding: 5px;
+  color: $social-icon-color;
+}

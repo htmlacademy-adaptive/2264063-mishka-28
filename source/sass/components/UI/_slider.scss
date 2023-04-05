@@ -28,6 +28,7 @@ $slider-button-color: #000000;
   border: 1px solid $slider-button-border-color;
   height: 52px;
   position: relative;
+  cursor: pointer;
 
   &--right {
     border-left: none;
