@@ -1,5 +1,5 @@
-$prod-toggle-bg: #56C3B2;
-$prod-toggle-bg-checked: #63D1BB;
+$prod-toggle-bg: #56c3b2;
+$prod-toggle-bg-checked: #63d1bb;
 $prod-toggle-decor-color: #149080;
 
 .product-toggle {
@@ -28,13 +28,13 @@ $prod-toggle-decor-color: #149080;
   }
 
   &--interior::after {
-    -webkit-mask: url("../../../../img/index/hero/interior.svg") no-repeat center;
+    mask: url("../../../../img/index/hero/interior.svg") no-repeat center;
     width: 40px;
     right: 35px;
   }
 
   &--toys::after {
-    -webkit-mask: url("../../../../img/index/hero/toy.svg") no-repeat center;
+    mask: url("../../../../img/index/hero/toy.svg") no-repeat center;
     width: 60px;
     right: 30px;
   }
@@ -48,4 +48,3 @@ $prod-toggle-decor-color: #149080;
   width: 150px;
   margin: 0 auto 0 0;
 }
-

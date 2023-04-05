@@ -1,4 +1,4 @@
-$burger-color: #231F20;
+$burger-color: #231f20;
 $burger-height: 14px;
 $burger-width: 20px;
 $burger-transition: 0.4s;
@@ -15,7 +15,7 @@ $burger-elem-thickness: 2px;
 
   &::before,
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     height: $burger-elem-thickness;
     background-color: $burger-color;

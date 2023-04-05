@@ -29,5 +29,11 @@ $link-underline-color: #62d1ba;
 
 .contacts__map {
   margin-bottom: 42px;
+  // временное решение, когда станет понятно, как делать карту, поменяю
+  display: flex;
+  justify-content: center;
 }
 
+.contacts__button {
+  width: 100%;
+}

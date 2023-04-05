@@ -1,0 +1,27 @@
+$modal-overlay-color: #ffffffe5;
+$modal-bg-color: #ffffff;
+$modal-border-color: #c6c6c6;
+$modal-shadow-color: #0001013f;
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: $modal-overlay-color;
+
+  &--active {
+    display: flex;
+  }
+}
+
+.modal__inner {
+  padding: 29px 30px 46px;
+  background-color: $modal-bg-color;
+  border: 1px solid $modal-border-color;
+  box-shadow: 0 5px 10px $modal-shadow-color;
+}
