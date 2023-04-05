@@ -1,7 +1,12 @@
 $primary-font-color: #444444;
 
 .popular-product {
-  background: url("../../../img/components/zigzag-line.svg") no-repeat bottom;
+  background: url("../../../img/components/zigzag-line.svg") repeat-x bottom;
+}
+
+.popular-product__container {
+  display: flex;
+  flex-direction: column;
 }
 
 .popular-product__header {
