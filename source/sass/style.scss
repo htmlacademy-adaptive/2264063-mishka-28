@@ -3,6 +3,7 @@
 @use "components/helpers/hidden";
 @use "components/helpers/section";
 @use "components/UI/button";
+@use "components/UI/slider";
 @use "components/page";
 @use "components/header/header";
 @use "components/header/navigation/navigation";
@@ -12,5 +13,6 @@
 @use "components/popular-product/popular-product";
 @use "components/popular-product/prop/prop";
 @use "components/about/about";
+@use "components/reviews/reviews";
 
 

@@ -53,7 +53,7 @@
       </div>
     </button>
   </section>
-  <section class="popular-product section">
+  <section class="popular-product section section--bordered">
     <div class="popular-product__container container">
       <header class="popular-product__header section__header">
         <p class="popular-product__title section__title">Вязаные корзинки</p>
@@ -129,14 +129,14 @@
       </div>
     </div>
   </section>
-  <section class="reviews section">
+  <section class="reviews section section--bordered">
     <div class="reviews__container container">
       <header class="section__header">
         <h2 class="section__title">Отзывы</h2>
       </header>
       <div class="reviews__slider slider">
         <ul class="reviews__list slider__list">
-          <li class="reviews__item slider__item">
+          <li class="reviews__item slider__item slider__item--active">
             <p class="reviews__text">
               Я молодая мама, но всё равно фотографии не набирали и близко такого количества
               лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке,
@@ -145,7 +145,6 @@
             <b class="reviews__author">Анастасия Красильникова</b>
             <span class="reviews__author-social">@misssssiskras</span>
           </li>
-
           <li class="reviews__item slider__item">
             <p class="reviews__text">
               Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у
@@ -156,7 +155,6 @@
             <b class="reviews__author">Екатерина Красильникова</b>
             <span class="reviews__author-social">@misssssiskras2</span>
           </li>
-
           <li class="reviews__item slider__item">
             <p class="reviews__text">
               Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков,
@@ -168,12 +166,14 @@
             <span class="reviews__author-social">@misssssiskras3</span>
           </li>
         </ul>
-        <button class="slider__arrow slider__arrow--left" type="button">
-          <span class="visually-hidden">Назад.</span>
-        </button>
-        <button class="slider__arrow slider__arrow--right" type="button">
-          <span class="visually-hidden">Вперед.</span>
-        </button>
+        <div class="slider__buttons">
+          <button class="slider__arrow slider__arrow--left" type="button">
+            <span class="visually-hidden">Назад.</span>
+          </button>
+          <button class="slider__arrow slider__arrow--right" type="button">
+            <span class="visually-hidden">Вперед.</span>
+          </button>
+        </div>
       </div>
       <a class="reviews__button button button--primary" href="#">Написать</a>
     </div>
