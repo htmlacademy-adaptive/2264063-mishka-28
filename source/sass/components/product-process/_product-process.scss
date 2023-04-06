@@ -1,0 +1,38 @@
+@use "../../settings/variables" as *;
+
+.production-process {
+  padding: 22px 0 33px;
+  border: 1px solid $border-color;
+  background: $fourth-theme-color;
+}
+
+.product-process__content {
+  padding: 0 34px;
+}
+
+.production-process__title {
+  margin: 0 0 27px;
+  padding-left: 57px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: $secondary-font-color;
+  background: url("../../../img/catalog/video-icon.svg") no-repeat left;
+}
+
+.production-process__video {
+  margin-bottom: 35px;
+  width: 100%;
+  height: auto;
+}
+
+.production-process__text {
+  margin: 0 0 41px;
+  font-size: 13px;
+  line-height: 24px;
+  color: $primary-font-color;
+}
+
+.production-process__button {
+  width: 100%;
+}

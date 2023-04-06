@@ -1,0 +1,26 @@
+@use "../../settings/variables" as *;
+
+.header {
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+}
+
+.header__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 19px;
+  padding-bottom: 18px;
+}
+
+.header__logo {
+  margin: 0 auto;
+}
+
+.header__nav {
+  position: absolute;
+  top: calc(100% + 1px);
+  left: 0;
+  right: 0;
+}

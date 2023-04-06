@@ -1,0 +1,45 @@
+@use "../../settings/variables" as *;
+
+.order-form__group {
+  padding: 30px 0;
+  border: none;
+  border-top: 1px solid $primary-theme-color-light;
+
+  &--padding-s {
+    padding-top: 10px;
+  }
+
+  &--padding-textarea {
+    padding: 20px 0 17px;
+  }
+}
+
+.order-form__title {
+  padding-inline-start: 0;
+  padding-inline-end: 25px;
+  color: $primary-theme-color;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.order-form__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+.order-form__prompt {
+  font-size: 14px;
+  line-height: 16px;
+  color: $primary-font-color;
+  margin: 0 0 30px 0;
+}
+
+.order-form__button {
+  width: 100%;
+}

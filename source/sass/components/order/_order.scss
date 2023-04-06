@@ -1,0 +1,12 @@
+@use "../../settings/variables" as *;
+
+.order__container {
+  padding-bottom: 55px;
+}
+
+.order__description {
+  font-size: 13px;
+  line-height: 24px;
+  color: $primary-font-color;
+  margin-bottom: 30px;
+}

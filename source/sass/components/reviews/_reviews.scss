@@ -1,0 +1,30 @@
+@use "../../settings/variables" as *;
+
+.reviews__slider {
+  margin-bottom: 38px;
+}
+
+.reviews__item {
+  font-size: 15px;
+  line-height: 30px;
+  color: $primary-font-color;
+}
+
+.reviews__text {
+  margin: 0 0 33px 0;
+}
+
+.reviews__author {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  color: $secondary-font-color;
+}
+
+.reviews__author-social {
+  line-height: 24px;
+}
+
+.reviews__button {
+  width: 100%;
+}

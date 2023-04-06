@@ -1,0 +1,53 @@
+@use "../../settings/variables" as *;
+
+$slider-button-border-color: $border-color;
+$slider-button-color: $secondary-font-color;
+
+.slider__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.slider__item {
+  display: none;
+  padding: 15px 0 30px;
+
+  &--active {
+    display: block;
+  }
+}
+
+.slider__buttons {
+  display: flex;
+}
+
+.slider__arrow {
+  max-width: 130px;
+  width: 100%;
+  padding: 0;
+  background: none;
+  border: 1px solid $slider-button-border-color;
+  height: 52px;
+  position: relative;
+  cursor: pointer;
+
+  &--right {
+    border-left: none;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    mask: url("../../../img/components/arrow.svg") no-repeat center;
+    background-color: $slider-button-color;
+  }
+
+  &--right::after {
+    transform: scaleX(-1);
+  }
+}

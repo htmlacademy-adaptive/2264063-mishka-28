@@ -1,0 +1,26 @@
+@use "../../settings/variables" as *;
+
+.section {
+  padding: 31px 0 42px;
+
+  &--bordered {
+    background: url("../../../img/components/zigzag-line.svg") repeat-x bottom;
+  }
+}
+
+.section__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: $secondary-font-color;
+  margin: 0;
+}
+
+.section__subtitle {
+  margin: 0;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: $primary-theme-color;
+  text-transform: uppercase;
+}

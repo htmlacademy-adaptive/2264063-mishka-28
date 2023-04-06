@@ -1,0 +1,24 @@
+.cart-adding__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 14px 0;
+}
+
+.cart-adding__group {
+  border: none;
+  padding: 22px 0 31px 0;
+  text-align: center;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.cart-adding__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 7px;
+}
