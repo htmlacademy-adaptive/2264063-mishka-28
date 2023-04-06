@@ -1,0 +1,7 @@
+@use "../../settings/variables" as *;
+
+.order__description {
+  font-size: 13px;
+  line-height: 24px;
+  color: $primary-font-color;
+}

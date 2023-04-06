@@ -1,0 +1,56 @@
+@use "../../../settings/variables" as *;
+
+$mark-size: 38px;
+$radio-mark-color: $primary-theme-color-light;
+$checkbox-mark-color: $secondary-font-color;
+
+.control {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 61px;
+  cursor: pointer;
+  word-wrap: break-word;
+  min-height: $mark-size;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  color: $secondary-font-color;
+}
+
+.control__mark {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto 0;
+  background-color: transparent;
+  border: 2px solid $primary-font-color;
+  width: $mark-size;
+  height: $mark-size;
+
+  &--radio {
+    width: $mark-size - 2;
+    height: $mark-size - 2;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 12px #ffffff;
+  }
+
+  &--checkbox::before {
+    content: "";
+    position: absolute;
+    mask: url("../../../../img/components/mark.svg") no-repeat center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.control__input[type="radio"]:checked + .control__mark--radio {
+  background-color: $radio-mark-color;
+}
+
+.control__input[type="checkbox"]:checked + .control__mark--checkbox::before {
+  background-color: $checkbox-mark-color;
+}
