@@ -2,20 +2,48 @@
 
 $mark-size: 38px;
 $radio-mark-color: $primary-theme-color-light;
+$radio-mark-inset-size: 10px;
 $checkbox-mark-color: $secondary-font-color;
 
 .control {
   position: relative;
   display: flex;
   align-items: center;
-  padding-left: 61px;
+  padding: 0;
   cursor: pointer;
   word-wrap: break-word;
-  min-height: $mark-size;
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
   color: $secondary-font-color;
+
+  &--radio,
+  &--checkbox {
+    padding-left: 61px;
+    min-height: $mark-size;
+  }
+
+  &--tel::after,
+  &--email::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+
+    background: $secondary-font-color;
+    opacity: 0.2;
+  }
+
+  &--tel::after {
+    width: 30px;
+    mask: url("../../../../img/components/phone.svg") no-repeat 0 5px;
+  }
+
+  &--email::after {
+    width: 35px;
+    mask: url("../../../../img/components/mail.svg") no-repeat 0 10px;
+  }
 }
 
 .control__mark {
@@ -33,7 +61,7 @@ $checkbox-mark-color: $secondary-font-color;
     width: $mark-size - 2;
     height: $mark-size - 2;
     border-radius: 50%;
-    box-shadow: inset 0 0 0 12px #ffffff;
+    box-shadow: inset 0 0 0 $radio-mark-inset-size #ffffff;
   }
 
   &--checkbox::before {
@@ -47,10 +75,47 @@ $checkbox-mark-color: $secondary-font-color;
   }
 }
 
-.control__input[type="radio"]:checked + .control__mark--radio {
-  background-color: $radio-mark-color;
+.control__input {
+  width: 100%;
+  padding: 17px 0;
+  border: none;
+  box-shadow: inset 0 -2px 0 $secondary-font-color;
+  font-size: inherit;
+  line-height: inherit;
+  font-family: inherit;
+
+  &::placeholder {
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+    opacity: 0.3;
+  }
+
+  &--radio:checked + .control__mark--radio {
+    background-color: $radio-mark-color;
+  }
+
+  &--checkbox:checked + .control__mark--checkbox::before {
+    background-color: $checkbox-mark-color;
+  }
+
+  &--tel,
+  &--email {
+    padding: 10px 40px 17px 0;
+  }
 }
 
-.control__input[type="checkbox"]:checked + .control__mark--checkbox::before {
-  background-color: $checkbox-mark-color;
+.control__textarea {
+  box-sizing: border-box;
+  width: 100%;
+  border: 2px solid $primary-font-color;
+  min-height: 142px;
+  padding: 17px;
+  font-size: 17px;
+  line-height: 18px;
+  font-family: inherit;
+  &::placeholder {
+    color: inherit;
+    opacity: 0.3;
+  }
 }
