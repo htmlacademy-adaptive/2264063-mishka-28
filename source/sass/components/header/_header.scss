@@ -1,6 +1,8 @@
+@use "../../settings/variables" as *;
+
 .header {
-  border-top: 1px solid #ececec;
-  border-bottom: 1px solid #ececec;
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
 }
 
 .header__container {

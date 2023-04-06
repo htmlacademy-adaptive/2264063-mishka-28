@@ -1,6 +1,7 @@
-$primary-font-color: #444444;
+@use "../../settings/variables" as *;
+
 $mark-border-color: #4444441a;
-$mark-border-color-checked: #63d1bb;
+$mark-border-color-checked: $primary-theme-color;
 
 .control-button {
   box-sizing: border-box;
@@ -10,7 +11,7 @@ $mark-border-color-checked: #63d1bb;
   position: relative;
   height: 52px;
   min-width: 82px;
-
+  cursor: pointer;
 }
 
 .control-button__input {

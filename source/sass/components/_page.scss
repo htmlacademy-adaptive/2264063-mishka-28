@@ -1,4 +1,6 @@
+@use "../settings/variables" as *;
+
 .page__body {
   margin: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: $font-family;
 }

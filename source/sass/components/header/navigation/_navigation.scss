@@ -1,13 +1,11 @@
-$nav-background-color: #ffffff;
-$nav-next-color: #000000;
-$nav-border-color: #ececec;
+@use "../../../settings/variables" as *;
 
 .nav {
   box-sizing: border-box;
   display: none;
   flex-direction: column;
   z-index: 10;
-  background-color: $nav-background-color;
+  background-color: $fourth-theme-color;
 
   &--active {
     display: flex;
@@ -25,7 +23,7 @@ $nav-border-color: #ececec;
 
 .nav__link {
   display: block;
-  color: $nav-next-color;
+  color: $secondary-font-color;
   text-decoration: none;
   font-weight: 700;
   font-size: 17px;
@@ -33,5 +31,5 @@ $nav-border-color: #ececec;
   padding: 27px 30px;
   text-align: center;
   vertical-align: middle;
-  border-bottom: 1px solid $nav-border-color;
+  border-bottom: 1px solid $border-color;
 }

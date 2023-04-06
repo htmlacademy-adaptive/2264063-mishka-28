@@ -1,12 +1,10 @@
-$prod-toggle-bg: #56c3b2;
-$prod-toggle-bg-checked: #63d1bb;
-$prod-toggle-decor-color: #149080;
+@use "../../../settings/variables" as *;
 
 .product-toggle {
   display: block;
   box-sizing: border-box;
   width: 100%;
-  background-color: $prod-toggle-bg;
+  background-color: $primary-theme-color-not-active;
   border: none;
   padding: 24px 0;
   text-align: left;
@@ -16,7 +14,6 @@ $prod-toggle-decor-color: #149080;
   line-height: 24px;
   position: relative;
 
-
   &--interior::after,
   &--toys::after {
     content: "";
@@ -24,7 +21,7 @@ $prod-toggle-decor-color: #149080;
     top: 0;
     bottom: 0;
     display: block;
-    background-color: $prod-toggle-decor-color;
+    background-color: $primary-theme-color-decor;
   }
 
   &--interior::after {
@@ -40,7 +37,7 @@ $prod-toggle-decor-color: #149080;
   }
 
   &--checked {
-    background-color: $prod-toggle-bg-checked;
+    background-color: $primary-theme-color;
   }
 }
 

@@ -1,5 +1,4 @@
-$primary-font-color: #444444;
-$secondary-font-color: #000000;
+@use "../../settings/variables" as *;
 
 .reviews__slider {
   margin-bottom: 38px;

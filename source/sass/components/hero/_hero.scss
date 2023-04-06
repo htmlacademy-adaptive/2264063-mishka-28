@@ -1,5 +1,7 @@
+@use "../../settings/variables" as *;
+
 .hero {
-  background: url("../../../img/index/hero/hero-mobile.jpg") no-repeat top, #fafafa;
+  background: url("../../../img/index/hero/hero-mobile.jpg") no-repeat top, $third-theme-color;
   padding: 73px 0 0 0;
 }
 

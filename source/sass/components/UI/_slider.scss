@@ -1,5 +1,7 @@
-$slider-button-border-color: #ececec;
-$slider-button-color: #000000;
+@use "../../settings/variables" as *;
+
+$slider-button-border-color: $border-color;
+$slider-button-color: $secondary-font-color;
 
 .slider__list {
   list-style: none;

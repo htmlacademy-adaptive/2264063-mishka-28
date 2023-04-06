@@ -1,5 +1,7 @@
+@use "../../settings/variables" as *;
+
 $modal-overlay-color: #ffffffe5;
-$modal-bg-color: #ffffff;
+$modal-bg-color: $fourth-theme-color;
 $modal-border-color: #c6c6c6;
 $modal-shadow-color: #0001013f;
 

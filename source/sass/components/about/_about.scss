@@ -1,5 +1,4 @@
-$icon-color: #63d1bb;
-$text-color: #000000;
+@use "../../settings/variables" as *;
 
 .about__header {
   margin-bottom: 30px;
@@ -29,13 +28,13 @@ $text-color: #000000;
 }
 
 .about__image {
-  color: $icon-color;
+  color: $primary-theme-color;
 }
 
 .about__text {
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
-  color: $text-color;
+  color: $secondary-font-color;
   margin: 0;
 }

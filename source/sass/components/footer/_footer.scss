@@ -1,9 +1,7 @@
-$footer-bg-color: #f1f1f1;
-$footer-link-color: #000000;
-$academy-logo-color: #63d1bb;
+@use "../../settings/variables" as *;
 
 .footer {
-  background-color: $footer-bg-color;
+  background-color: $third-theme-color;
 }
 
 .footer__container {
@@ -18,7 +16,7 @@ $academy-logo-color: #63d1bb;
   font-weight: 700;
   font-size: 19px;
   line-height: 18px;
-  color: $footer-link-color;
+  color: $secondary-font-color;
   position: relative;
 
   &::after {
@@ -31,6 +29,6 @@ $academy-logo-color: #63d1bb;
     mask: url("../../../img/components/htmlacademy.svg") no-repeat center /cover;
     width: 30px;
     height: 34px;
-    background-color: $academy-logo-color;
+    background-color: $primary-theme-color;
   }
 }

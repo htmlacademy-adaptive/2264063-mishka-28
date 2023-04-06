@@ -1,5 +1,4 @@
-$primary-font-color: #444444;
-$link-underline-color: #62d1ba;
+@use "../../settings/variables" as *;
 
 .contacts__header {
   margin-bottom: 10px;

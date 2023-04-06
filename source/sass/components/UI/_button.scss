@@ -1,6 +1,4 @@
-$primary-font-color: #444444;
-$add-button-bg-color: #63d1bb;
-$add-button-font-color: #ffffff;
+@use "../../settings/variables" as *;
 
 .button {
   box-sizing: border-box;
@@ -16,6 +14,8 @@ $add-button-font-color: #ffffff;
   text-transform: uppercase;
   text-align: center;
 
+  cursor: pointer;
+
   &--primary {
     background: none;
     border: 2px solid $primary-font-color;
@@ -23,8 +23,8 @@ $add-button-font-color: #ffffff;
   }
 
   &--add {
-    background-color: $add-button-bg-color;
+    background-color: $primary-theme-color;
     border: none;
-    color: $add-button-font-color;
+    color: $third-font-color;
   }
 }

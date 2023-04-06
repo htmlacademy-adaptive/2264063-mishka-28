@@ -1,8 +1,10 @@
-$burger-color: #231f20;
+@use "../../../settings/variables" as *;
+
 $burger-height: 14px;
 $burger-width: 20px;
 $burger-transition: 0.4s;
 $burger-elem-thickness: 2px;
+$burger-color: $secondary-theme-color;
 
 .burger {
   background: none;

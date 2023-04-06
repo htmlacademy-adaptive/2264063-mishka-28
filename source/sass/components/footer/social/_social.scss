@@ -1,5 +1,4 @@
-$social-border-color: #e5e5e5;
-$social-icon-color: #231f20;
+@use "../../../settings/variables" as *;
 
 .social {
   display: flex;
@@ -15,5 +14,5 @@ $social-icon-color: #231f20;
 .social__link {
   display: block;
   padding: 5px;
-  color: $social-icon-color;
+  color: $secondary-theme-color;
 }
