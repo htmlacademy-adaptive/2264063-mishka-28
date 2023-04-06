@@ -1,12 +1,28 @@
 @use "../../settings/variables" as *;
 
 .hero {
-  background: url("../../../img/index/hero/hero-mobile.jpg") no-repeat top, $third-theme-color;
-  padding: 73px 0 0 0;
+  background-color: $third-theme-color;
+  min-height: 177px;
+
+  &--index {
+    background-image: url("../../../img/index/hero/hero-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding: 73px 0 0 0;
+  }
+
+  &--simple {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .hero__title {
-  margin: 0 0 120px 0;
   text-align: center;
   font-size: 27px;
+
+  &--index {
+    margin: 0 0 120px 0;
+  }
 }
