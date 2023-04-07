@@ -3,10 +3,23 @@
 $slider-button-border-color: $border-color;
 $slider-button-color: $secondary-font-color;
 
+.slider {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: repeat(2, auto);
+  }
+}
+
 .slider__list {
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+  }
 }
 
 .slider__item {
@@ -16,15 +29,23 @@ $slider-button-color: $secondary-font-color;
   &--active {
     display: block;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
 }
 
 .slider__buttons {
   display: flex;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2;
+    grid-row: 2;
+  }
 }
 
 .slider__arrow {
-  max-width: 130px;
-  width: 100%;
+  width: 130px;
   padding: 0;
   background: none;
   border: 1px solid $slider-button-border-color;
