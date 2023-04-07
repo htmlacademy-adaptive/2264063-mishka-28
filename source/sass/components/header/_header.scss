@@ -16,6 +16,8 @@
 
 .header__logo {
   margin: 0 auto;
+  position: relative;
+  z-index: 15;
 
   @media (min-width: $tablet-width) {
     margin-left: 0;
