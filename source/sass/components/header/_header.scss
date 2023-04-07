@@ -16,6 +16,14 @@
 
 .header__logo {
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+  }
 }
 
 .header__nav {
@@ -23,4 +31,24 @@
   top: calc(100% + 1px);
   left: 0;
   right: 0;
+
+  @media (min-width: $tablet-width) {
+    top: 0;
+  }
+}
+
+.header__text {
+  $line-height: 24px;
+  display: none;
+  position: absolute;
+  right: $side-padding-other;
+  bottom: calc(-50% - ($line-height / 2));
+  margin: 0;
+  font-size: 15px;
+  line-height: $line-height;
+  color: $primary-font-color;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }

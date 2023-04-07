@@ -12,12 +12,12 @@
     <a class="header__logo">
       <img class="header__logo-image" src="./img/components/site-logo.svg" width="86" height="35" alt="Логотип сайта Mishka.">
     </a>
-    <button class="header__burger burger burger">
+    <button class="header__burger burger">
       <div class="burger__item">
         <span class="visually-hidden">Открыть/Закрыть меню.</span>
       </div>
     </button>
-    <nav class="header__nav nav">
+    <nav class="header__nav nav nav--active">
       <ul class="nav__list">
         <li class="nav__item">
           <a class="nav__link" href="catalog.html">Каталог товаров</a>
@@ -25,16 +25,26 @@
         <li class="nav__item">
           <a class="nav__link" href="form.html">Вязание на заказ</a>
         </li>
+        <li class="nav__item nav__item--desktop-only">
+          <a class="nav__link" href="#">Новые поступления</a>
+        </li>
+        <li class="nav__item nav__item--desktop-only">
+          <a class="nav__link" href="#">Распродажа</a>
+        </li>
+
+
+
       </ul>
       <ul class="nav__user-list">
         <li class="nav__user-item nav__user-item--search">
-          <a class="nav__link" href="#">Поиск по сайту</a>
+          <a class="nav__user-link" href="#">Поиск по сайту</a>
         </li>
         <li class="nav__user-item nav__user-item--cart">
-          <a class="nav__link" href="#">Корзина: <span class="nav__cart-count">пока пуста</span></a>
+          <a class="nav__user-link" href="#">Корзина: <span class="nav__cart-count">пока пуста</span></a>
         </li>
       </ul>
     </nav>
+    <p class="header__text">Бесплатная доставка по России</p>
   </div>
 </header>
 <main class="page__main">

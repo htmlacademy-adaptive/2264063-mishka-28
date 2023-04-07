@@ -45,6 +45,10 @@ $burger-color: $secondary-theme-color;
   &--active::after {
     transform: translateY($burger-height * -0.5 + 1) rotate(45deg);
   }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .burger__item {

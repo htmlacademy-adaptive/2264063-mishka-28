@@ -1,4 +1,5 @@
 @use "settings/fonts";
+@use "settings/global";
 @use "components/helpers/container";
 @use "components/helpers/hidden";
 @use "components/helpers/section";
@@ -6,7 +7,6 @@
 @use "components/ui/slider";
 @use "components/ui/modal";
 @use "components/ui/control-button";
-@use "components/page";
 @use "components/header/header";
 @use "components/header/navigation/navigation";
 @use "components/header/burger/burger";
