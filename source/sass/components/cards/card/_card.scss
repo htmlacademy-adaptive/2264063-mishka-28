@@ -3,8 +3,17 @@
 .card {
   display: flex;
   flex-direction: column;
+  flex: 1;
   border: 1px solid $border-color;
   background-color: $fourth-theme-color;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
 }
 
 .card__image {
@@ -13,12 +22,14 @@
   object-position: center;
   object-fit: contain;
   margin-bottom: 28px;
+  flex: 1;
 }
 
 .card__content {
   display: flex;
   flex-direction: column;
   padding: 0 28px;
+  flex: 1;
 }
 
 .card__title {
@@ -41,6 +52,10 @@
   justify-content: space-between;
   border-top: 1px solid $border-color;
   padding: 23px 0 27px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: auto;
+  }
 }
 
 .card__price {
