@@ -1,3 +1,9 @@
+.cart-adding {
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
 .cart-adding__title {
   font-weight: 700;
   font-size: 25px;
@@ -16,9 +22,18 @@
 }
 
 .cart-adding__list {
+  width: 100%;
   padding: 0;
   margin: 0;
   list-style: none;
   display: flex;
   gap: 7px;
+}
+
+.cart-adding__item {
+  flex: 1;
+}
+
+.cart-adding__button {
+  width: 100%;
 }
