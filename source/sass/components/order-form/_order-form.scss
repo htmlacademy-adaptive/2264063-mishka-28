@@ -12,6 +12,11 @@
   &--padding-textarea {
     padding: 20px 0 17px;
   }
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding-top: 0;
+  }
 }
 
 .order-form__title {
@@ -22,6 +27,15 @@
   font-size: 17px;
   line-height: 16px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    bottom: -25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 8%;
+  }
 }
 
 .order-form__list {
@@ -31,6 +45,14 @@
   display: flex;
   flex-direction: column;
   row-gap: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 25%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 16.75%;
+  }
 }
 
 .order-form__prompt {
