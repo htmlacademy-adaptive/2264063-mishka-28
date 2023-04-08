@@ -40,6 +40,7 @@
   @media (min-width: $tablet-width) {
     order: 2;
   }
+
   @media (min-width: $desktop-width) {
     order: 0;
   }
@@ -75,6 +76,7 @@
   &--desktop-only {
     font-size: 15px;
     display: none;
+
     @media (min-width: $desktop-width) {
       display: block;
     }
