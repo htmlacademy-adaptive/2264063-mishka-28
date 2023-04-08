@@ -79,7 +79,7 @@ $checkbox-mark-color: $secondary-font-color;
   width: 100%;
   padding: 17px 0;
   border: none;
-  box-shadow: inset 0 -2px 0 $secondary-font-color;
+  border-bottom: 2px solid $secondary-font-color;
   font-size: inherit;
   line-height: inherit;
   font-family: inherit;
