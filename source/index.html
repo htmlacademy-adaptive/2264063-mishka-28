@@ -12,12 +12,7 @@
     <a class="header__logo">
       <img class="header__logo-image" src="./img/components/site-logo.svg" width="86" height="35" alt="Логотип магазина Mishka.">
     </a>
-    <button class="header__burger burger">
-      <div class="burger__item">
-        <span class="visually-hidden">Открыть/Закрыть меню.</span>
-      </div>
-    </button>
-    <nav class="header__nav nav">
+    <nav class="header__nav nav nav--nojs">
       <ul class="nav__list">
         <li class="nav__item">
           <a class="nav__link" href="catalog.html">Каталог товаров</a>
@@ -41,6 +36,11 @@
         </li>
       </ul>
     </nav>
+    <button class="header__burger burger">
+      <div class="burger__item">
+        <span class="visually-hidden">Открыть/Закрыть меню.</span>
+      </div>
+    </button>
     <p class="header__text">Бесплатная доставка по России</p>
   </div>
 </header>
@@ -286,5 +286,6 @@
     </section>
   </div>
 </div>
+<script src="./js/script.js"></script>
 </body>
 </html>

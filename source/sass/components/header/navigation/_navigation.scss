@@ -10,6 +10,16 @@
     display: flex;
   }
 
+  &--nojs {
+    display: flex;
+    width: 100%;
+    position: static;
+  }
+
+  &--nojs + .burger {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     background: none;

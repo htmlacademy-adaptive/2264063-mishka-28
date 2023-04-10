@@ -8,6 +8,7 @@
 .header__container {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   padding-top: 19px;
@@ -18,6 +19,7 @@
   margin: 0 auto;
   position: relative;
   z-index: 15;
+  order: 1;
 
   @media (min-width: $tablet-width) {
     margin-left: 0;
@@ -28,11 +30,16 @@
   }
 }
 
+.header__burger {
+  order: 2;
+}
+
 .header__nav {
   position: absolute;
   top: calc(100% + 1px);
   left: 0;
   right: 0;
+  order: 3;
 
   @media (min-width: $tablet-width) {
     top: 0;

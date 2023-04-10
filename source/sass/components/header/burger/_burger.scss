@@ -14,6 +14,7 @@ $burger-color: $secondary-theme-color;
   align-self: center;
   height: $burger-height;
   width: $burger-width;
+  cursor: pointer;
 
   &::before,
   &::after {
