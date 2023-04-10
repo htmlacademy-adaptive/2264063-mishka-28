@@ -40,14 +40,13 @@
 }
 
 .header__text {
-  $line-height: 24px;
   display: none;
   position: absolute;
   right: $side-padding-other;
-  bottom: calc(-50% - ($line-height / 2));
+  bottom: calc(-50% - 12px);
   margin: 0;
   font-size: 15px;
-  line-height: $line-height;
+  line-height: 24px;
   color: $primary-font-color;
 
   @media (min-width: $tablet-width) {
