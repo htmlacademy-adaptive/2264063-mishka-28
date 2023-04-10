@@ -3,6 +3,8 @@
 .hero {
   background-color: $third-theme-color;
   min-height: 177px;
+  display: flex;
+  flex-direction: column;
 
   &--index {
     background-image: url("../../../img/index/hero/hero-mobile.jpg");
@@ -16,6 +18,19 @@
     justify-content: center;
     align-items: center;
   }
+
+  @media (min-width: $tablet-width) {
+    min-height: 226px;
+
+    &--index {
+      min-height: 746px;
+      padding-top: 155px;
+    }
+  }
+}
+
+.hero__container {
+  margin-bottom: auto;
 }
 
 .hero__title {
@@ -24,5 +39,18 @@
 
   &--index {
     margin: 0 0 120px 0;
+  }
+}
+
+.hero__buttons {
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: $tablet-width) {
+    padding: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
   }
 }

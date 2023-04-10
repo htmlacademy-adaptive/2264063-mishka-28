@@ -1,12 +1,12 @@
 @use "settings/fonts";
+@use "settings/global";
 @use "components/helpers/container";
 @use "components/helpers/hidden";
 @use "components/helpers/section";
-@use "components/UI/button";
-@use "components/UI/slider";
-@use "components/UI/modal";
-@use "components/UI/control-button";
-@use "components/page";
+@use "components/ui/button";
+@use "components/ui/slider";
+@use "components/ui/modal";
+@use "components/ui/control-button";
 @use "components/header/header";
 @use "components/header/navigation/navigation";
 @use "components/header/burger/burger";
@@ -26,3 +26,4 @@
 @use "components/order/order";
 @use "components/order-form/order-form";
 @use "components/order-form/control/control";
+//TODO: Вывести переменные и миксины по шрифтам

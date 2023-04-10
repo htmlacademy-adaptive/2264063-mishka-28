@@ -1,7 +1,13 @@
+@use "../../settings/variables" as *;
+
 .container {
-  box-sizing: border-box;
   width: 100%;
-  max-width: 1080px;
-  padding: 0 30px;
+  max-width: $desktop-width + $side-padding-mobile * 2;
+  padding: 0 $side-padding-mobile;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: $desktop-width + $side-padding-other * 2;
+    padding: 0 $side-padding-other;
+  }
 }

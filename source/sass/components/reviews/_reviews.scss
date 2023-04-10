@@ -1,7 +1,24 @@
 @use "../../settings/variables" as *;
 
+.reviews__header {
+  @media (min-width: $tablet-width) {
+    grid-row: 1;
+    grid-column: 1 / -1;
+  }
+}
+
 .reviews__slider {
   margin-bottom: 38px;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 2 / -1;
+    grid-column: 1 / -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 2 / -1;
+    grid-column: 2 / -1;
+  }
 }
 
 .reviews__item {
@@ -23,8 +40,22 @@
 
 .reviews__author-social {
   line-height: 24px;
+  display: block;
 }
 
 .reviews__button {
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 1;
+    grid-column: 2;
+    width: auto;
+    justify-self: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 1;
+    grid-column: 3;
+    align-self: end;
+  }
 }

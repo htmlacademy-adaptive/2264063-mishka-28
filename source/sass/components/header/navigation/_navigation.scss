@@ -1,7 +1,6 @@
 @use "../../../settings/variables" as *;
 
 .nav {
-  box-sizing: border-box;
   display: none;
   flex-direction: column;
   z-index: 10;
@@ -10,6 +9,15 @@
   &--active {
     display: flex;
   }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    background: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
 }
 
 .nav__list,
@@ -17,19 +25,66 @@
   display: flex;
   flex-direction: column;
   list-style: none;
+
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    max-width: 550px;
+  }
 }
 
-.nav__link {
+.nav__list {
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 0;
+  }
+}
+
+.nav__user-list {
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+  }
+}
+
+.nav__link,
+.nav__user-link {
   display: block;
-  color: $secondary-font-color;
   text-decoration: none;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  padding: 27px 30px;
+  color: $secondary-font-color;
+  padding: 27px $side-padding-mobile;
   text-align: center;
   vertical-align: middle;
   border-bottom: 1px solid $border-color;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+.nav__item,
+.nav__user-item {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+
+  &--desktop-only {
+    font-size: 15px;
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
+}
+
+.nav__user-link {
+  @media (min-width: $tablet-width) {
+    border-left: 1px solid $border-color;
+  }
 }

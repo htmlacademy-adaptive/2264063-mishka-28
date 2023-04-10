@@ -25,16 +25,23 @@
         <li class="nav__item">
           <a class="nav__link" href="form.html">Вязание на заказ</a>
         </li>
+        <li class="nav__item nav__item--desktop-only">
+          <a class="nav__link" href="#">Новые поступления</a>
+        </li>
+        <li class="nav__item nav__item--desktop-only">
+          <a class="nav__link" href="#">Распродажа</a>
+        </li>
       </ul>
       <ul class="nav__user-list">
         <li class="nav__user-item nav__user-item--search">
-          <a class="nav__link" href="#">Поиск по сайту</a>
+          <a class="nav__user-link" href="#">Поиск по сайту</a>
         </li>
         <li class="nav__user-item nav__user-item--cart">
-          <a class="nav__link" href="#">Корзина: <span>пока пуста</span></a>
+          <a class="nav__user-link" href="#">Корзина: <span class="nav__cart-count">пока пуста</span></a>
         </li>
       </ul>
     </nav>
+    <p class="header__text">Бесплатная доставка по России</p>
   </div>
 </header>
 <main class="cards page__main">
@@ -93,9 +100,9 @@
       </li>
     </ul>
     <section class="production-process">
-      <div class="product-process__content">
+      <header class="product-process__header">
         <h2 class="production-process__title">Процесс производства</h2>
-      </div>
+      </header>
       <img class="production-process__video" src="./img/catalog/video-mobile.jpg" width="260" height="150" alt="Видео о процессе производства.">
       <!-- кнопку play добавлю позже, когда станет понятно, как вставлять видео -->
       <div class="product-process__content">
@@ -110,6 +117,9 @@
 </main>
 <footer class="footer">
   <div class="footer__container container">
+    <a class="footer__logo" href="index.html">
+      <img src="./img/components/logo-footer.svg" alt="Логотип магазина Mishka.">
+    </a>
     <ul class="social">
       <li class="social__item">
         <a class="social__link" href="#">
