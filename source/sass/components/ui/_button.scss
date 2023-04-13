@@ -14,6 +14,8 @@
   text-align: center;
 
   cursor: pointer;
+  transition: background-color $transition-duration ease,
+  color $transition-duration ease;
 
   &--primary {
     background: none;
@@ -27,6 +29,25 @@
     color: $third-font-color;
     font-size: $font-size-modal-buttons;
     line-height: $line-height-modal-buttons;
+  }
+
+  &--primary:not(&--disabled):hover {
+    background-color: $primary-font-color;
+    color: $third-font-color;
+  }
+
+  &--primary:not(&--disabled):focus {
+
+  }
+
+  &--primary:not(&--disabled):active {
+    color: rgba($third-font-color, $element-down-opacity);
+
+  }
+
+  &:disabled,
+  &--disabled {
+    opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {
