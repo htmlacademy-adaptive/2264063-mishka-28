@@ -18,7 +18,7 @@
           <a class="nav__link" href="catalog.html">Каталог товаров</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="form.html">Вязание на заказ</a>
+          <a class="nav__link nav__link--bordered" href="form.html">Вязание на заказ</a>
         </li>
         <li class="nav__item nav__item--desktop-only">
           <a class="nav__link" href="#">Новые поступления</a>
@@ -29,19 +29,22 @@
       </ul>
       <ul class="nav__user-list">
         <li class="nav__user-item nav__user-item--search">
-          <a class="nav__user-link" href="#">Поиск по сайту</a>
+          <a class="nav__user-link nav__user-link--bordered" href="#">
+            <span class="nav__user-link-span">Поиск по сайту</span>
+          </a>
         </li>
         <li class="nav__user-item nav__user-item--cart">
-          <a class="nav__user-link" href="#">Корзина: <span class="nav__cart-count">пока пуста</span></a>
+          <a class="nav__user-link nav__user-link--bordered" href="#">Корзина:
+            <span class="nav__cart-count">пока пуста</span></a>
         </li>
+        <li class="header__text">Бесплатная доставка по России</li>
       </ul>
     </nav>
     <button class="header__burger burger">
-      <div class="burger__item">
+      <span class="burger__item">
         <span class="visually-hidden">Открыть/Закрыть меню.</span>
-      </div>
+      </span>
     </button>
-    <p class="header__text">Бесплатная доставка по России</p>
   </div>
 </header>
 <main class="page__main">
@@ -51,14 +54,14 @@
     </div>
     <div class="hero__buttons container">
       <button class="product-toggle product-toggle--interior product-toggle--checked" type="button">
-        <div class="product-toggle__container container">
+        <span class="product-toggle__container container">
           Предметы интерьера
-        </div>
+        </span>
       </button>
       <button class="product-toggle product-toggle--toys" type="button">
-        <div class="product-toggle__container container">
+        <span class="product-toggle__container container">
           Детские игрушки
-        </div>
+        </span>
       </button>
     </div>
   </section>
@@ -261,21 +264,21 @@
             <li class="cart-adding__item">
               <label class="cart-adding__control control-button">
                 <input class="control-button__input visually-hidden" type="radio" name="product-size" value="S" checked>
-                <div class="control-button__mark"></div>
+                <span class="control-button__mark"></span>
                 <span class="control-button__label">S</span>
               </label>
             </li>
             <li class="cart-adding__item">
               <label class="cart-adding__control control-button">
                 <input class="control-button__input visually-hidden" type="radio" name="product-size" value="M">
-                <div class="control-button__mark"></div>
+                <span class="control-button__mark"></span>
                 <span class="control-button__label">M</span>
               </label>
             </li>
             <li class="cart-adding__item">
               <label class="cart-adding__control control-button">
                 <input class="control-button__input visually-hidden" type="radio" name="product-size" value="L">
-                <div class="control-button__mark"></div>
+                <span class="control-button__mark"></span>
                 <span class="control-button__label">L</span>
               </label>
             </li>

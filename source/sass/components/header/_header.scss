@@ -20,6 +20,18 @@
   position: relative;
   z-index: 15;
   order: 1;
+  transition: opacity $transition-duration ease;
+  &[href]:hover {
+    opacity: $element-hover-opacity;
+  }
+
+  &:focus {
+    outline-color: $primary-theme-color;
+  }
+
+  &[href]:active {
+    opacity: $element-down-opacity;
+  }
 
   @media (min-width: $tablet-width) {
     margin-left: 0;
@@ -43,6 +55,7 @@
 
   @media (min-width: $tablet-width) {
     top: 0;
+    padding: 0 20px;
   }
 }
 
@@ -50,10 +63,10 @@
   display: none;
   position: absolute;
   right: $side-padding-other;
-  bottom: calc(-50% - 12px);
+  bottom: -50px;
   margin: 0;
-  font-size: 15px;
-  line-height: 24px;
+  font-size: $font-size-text-m;
+  line-height: $line-height-text-m;
   color: $primary-font-color;
 
   @media (min-width: $tablet-width) {

@@ -10,7 +10,7 @@
   color: #ffffff;
   font-weight: 700;
   font-size: 19px;
-  line-height: 24px;
+  line-height: $line-height-text-m;
   position: relative;
 
   &--interior::after,
@@ -41,6 +41,7 @@
 }
 
 .product-toggle__container {
+  display: block;
   width: 150px;
   margin: 0 auto 0 0;
 }

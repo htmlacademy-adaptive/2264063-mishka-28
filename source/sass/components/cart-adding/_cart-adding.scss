@@ -1,3 +1,5 @@
+@use "../../settings/variables" as *;
+
 .cart-adding {
   width: 100%;
   max-width: 350px;
@@ -6,8 +8,8 @@
 
 .cart-adding__title {
   font-weight: 700;
-  font-size: 25px;
-  line-height: 30px;
+  font-size: $font-size-titles-mobile;
+  line-height: $line-height-titles-mobile;
   text-transform: uppercase;
   text-align: center;
   margin: 0 0 14px 0;
@@ -17,8 +19,8 @@
   border: none;
   padding: 22px 0 31px 0;
   text-align: center;
-  font-size: 15px;
-  line-height: 30px;
+  font-size: $font-size-text-m;
+  line-height: $line-height-text-l;
 }
 
 .cart-adding__list {

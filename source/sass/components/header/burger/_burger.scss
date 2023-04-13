@@ -15,6 +15,19 @@ $burger-color: $secondary-theme-color;
   height: $burger-height;
   width: $burger-width;
   cursor: pointer;
+  transition: opacity $transition-duration ease;
+
+  &:hover {
+    opacity: $element-hover-opacity;
+  }
+
+  &:focus {
+    outline-color: $primary-theme-color;
+  }
+
+  &:active {
+    opacity: $element-down-opacity;
+  }
 
   &::before,
   &::after {
@@ -53,6 +66,7 @@ $burger-color: $secondary-theme-color;
 }
 
 .burger__item {
+  display: block;
   width: 100%;
   height: $burger-elem-thickness;
   background-color: $burger-color;

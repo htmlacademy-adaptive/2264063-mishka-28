@@ -29,7 +29,7 @@ $mark-border-color-checked: $primary-theme-color;
 
 .control-button__label {
   font-weight: 700;
-  font-size: 17px;
-  line-height: 16px;
+  font-size: $font-size-modal-buttons;
+  line-height: $line-height-modal-buttons;
   color: $primary-font-color;
 }

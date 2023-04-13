@@ -22,8 +22,8 @@
 }
 
 .reviews__item {
-  font-size: 15px;
-  line-height: 30px;
+  font-size: $font-size-text-m;
+  line-height: $line-height-text-l;
   color: $primary-font-color;
 }
 
@@ -33,13 +33,13 @@
 
 .reviews__author {
   font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
+  font-size: $font-size-text-l;
+  line-height: $line-height-text-m;
   color: $secondary-font-color;
 }
 
 .reviews__author-social {
-  line-height: 24px;
+  line-height: $line-height-text-m;
   display: block;
 }
 

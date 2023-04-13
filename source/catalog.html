@@ -18,7 +18,7 @@
           <a class="nav__link">Каталог товаров</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="form.html">Вязание на заказ</a>
+          <a class="nav__link nav__link--bordered" href="form.html">Вязание на заказ</a>
         </li>
         <li class="nav__item nav__item--desktop-only">
           <a class="nav__link" href="#">Новые поступления</a>
@@ -29,19 +29,22 @@
       </ul>
       <ul class="nav__user-list">
         <li class="nav__user-item nav__user-item--search">
-          <a class="nav__user-link" href="#">Поиск по сайту</a>
+          <a class="nav__user-link nav__user-link--bordered" href="#">
+            <span class="nav__user-link-span">Поиск по сайту</span>
+          </a>
         </li>
         <li class="nav__user-item nav__user-item--cart">
-          <a class="nav__user-link" href="#">Корзина: <span class="nav__cart-count">пока пуста</span></a>
+          <a class="nav__user-link nav__user-link--bordered" href="#">Корзина:
+            <span class="nav__cart-count">пока пуста</span></a>
         </li>
+        <li class="header__text">Бесплатная доставка по России</li>
       </ul>
     </nav>
     <button class="header__burger burger">
-      <div class="burger__item">
+      <span class="burger__item">
         <span class="visually-hidden">Открыть/Закрыть меню.</span>
-      </div>
+      </span>
     </button>
-    <p class="header__text">Бесплатная доставка по России</p>
   </div>
 </header>
 <main class="cards page__main">
@@ -49,7 +52,7 @@
     <h1 class="hero__title container">Каталог товаров</h1>
   </div>
   <div class="container">
-    <ul class="cards__list">
+    <ol class="cards__list">
       <li class="card">
         <img class="card__image" src="./img/catalog/product-1.jpg" width="260" height="195" alt="Фотография изделия.">
         <div class="card__content">
@@ -98,7 +101,7 @@
           </footer>
         </div>
       </li>
-    </ul>
+    </ol>
     <section class="production-process">
       <header class="product-process__header">
         <h2 class="production-process__title">Процесс производства</h2>

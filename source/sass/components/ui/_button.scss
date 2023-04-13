@@ -8,8 +8,8 @@
 
   text-decoration: none;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
+  font-size: $font-size-buttons-mobile;
+  line-height: $line-height-buttons;
   text-transform: uppercase;
   text-align: center;
 
@@ -25,5 +25,7 @@
     background-color: $primary-theme-color;
     border: none;
     color: $third-font-color;
+    font-size: $font-size-modal-buttons;
+    line-height: $line-height-modal-buttons;
   }
 }

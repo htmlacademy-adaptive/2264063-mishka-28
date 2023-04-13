@@ -4,8 +4,8 @@
   display: grid;
   grid-template-columns: 97px 1fr;
   margin: 0;
-  font-size: 15px;
-  line-height: 20px;
+  font-size: $font-size-text-m;
+  line-height: $line-height-text-s;
   border-bottom: 1px solid $border-color;
 }
 
