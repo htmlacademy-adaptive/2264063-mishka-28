@@ -21,10 +21,22 @@
 
   @media (min-width: $tablet-width) {
     min-height: 226px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 24px;
+      bottom: -12px;
+      background-image: url('../../../img/components/zigzag-fill-desktop.svg');
+      background-position: center bottom;
+    }
 
     &--index {
       min-height: 746px;
       padding-top: 155px;
+      background-size: contain;
     }
   }
 }
@@ -39,6 +51,16 @@
 
   &--index {
     margin: 0 0 120px 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-titles-tablet;
+    line-height: $line-height-titles-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: $font-size-titles-desktop;
+    line-height: $font-size-titles-desktop;
   }
 }
 

@@ -21,6 +21,7 @@
   z-index: 15;
   order: 1;
   transition: opacity $transition-duration ease;
+
   &[href]:hover {
     opacity: $element-hover-opacity;
   }
@@ -31,6 +32,7 @@
 
   &[href]:active {
     opacity: $element-down-opacity;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
 
   @media (min-width: $tablet-width) {

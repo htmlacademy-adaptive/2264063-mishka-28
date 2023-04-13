@@ -1,17 +1,49 @@
 @use "../../../settings/variables" as *;
 
+$interior-color: $primary-theme-color;
+$interior-action-color: #59d5bc;
+
+$toys-color: #56c3b2;
+$toys-action-color: #46c1ae;
+
+$decor-color: #149080;
+$decor-opacity: 0.5;
+$decor-opacity-hover: 0.7;
+$decor-opacity-active: 0.3;
+
 .product-toggle {
   display: block;
   width: 100%;
-  background-color: $primary-theme-color-not-active;
   border: none;
   padding: 24px 0;
   text-align: left;
-  color: #ffffff;
+  color: $third-font-color;
   font-weight: 700;
   font-size: 19px;
   line-height: $line-height-text-m;
   position: relative;
+  cursor: pointer;
+  transition: background-color $transition-duration ease,
+  transform $transition-duration ease;
+
+  &::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    background-color: inherit;
+    transition: transform $transition-duration ease;
+  }
+
+  &--interior {
+    background-color: $interior-color;
+  }
+
+  &--toys {
+    background-color: $toys-color;
+  }
 
   &--interior::after,
   &--toys::after {
@@ -20,7 +52,9 @@
     top: 0;
     bottom: 0;
     display: block;
-    background-color: $primary-theme-color-decor;
+    background-color: $decor-color;
+    opacity: $decor-opacity;
+    transition: opacity $transition-duration ease;
   }
 
   &--interior::after {
@@ -35,8 +69,28 @@
     right: 30px;
   }
 
-  &--checked {
-    background-color: $primary-theme-color;
+  &--interior:hover {
+    background-color: $interior-action-color;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  &:hover::before {
+    transform: translateY(5px);
+  }
+
+  &--toys:hover {
+    background-color: $toys-action-color;
+  }
+
+  &:hover::after {
+    opacity: $decor-opacity-hover;
+  }
+
+  &:active::after {
+    opacity: $decor-opacity-active;
   }
 }
 
