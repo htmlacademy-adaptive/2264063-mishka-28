@@ -26,6 +26,11 @@ $decor-opacity-active: 0.3;
   transition: background-color $transition-duration ease,
   transform $transition-duration ease;
 
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: $line-height-text-l;
+  }
+
   &::before {
     content: '';
     width: 100%;

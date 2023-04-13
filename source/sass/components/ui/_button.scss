@@ -3,7 +3,7 @@
 .button {
   display: inline-block;
 
-  padding: 16px;
+  padding: 14px;
   min-width: 190px;
 
   text-decoration: none;
@@ -27,5 +27,9 @@
     color: $third-font-color;
     font-size: $font-size-modal-buttons;
     line-height: $line-height-modal-buttons;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-buttons-tablet;
   }
 }
