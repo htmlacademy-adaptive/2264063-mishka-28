@@ -1,11 +1,17 @@
 @use "../../settings/variables" as *;
 
+.contacts {
+  padding: 46px 0 57px;
+}
+
 .contacts__header {
   margin-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / -1;
     grid-row: 1;
+    margin: 0;
+    align-items: end;
   }
 }
 
@@ -20,6 +26,7 @@
 
   @media (min-width: $tablet-width) {
     width: 50%;
+    font-size: $font-size-text-l;
   }
 
   @media (min-width: $desktop-width) {
@@ -37,6 +44,7 @@
   @media (min-width: $tablet-width) {
     grid-column: 1 / -1;
     display: flex;
+    margin: 20px 0 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -101,5 +109,9 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-self: center;
   }
 }
