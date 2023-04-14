@@ -59,9 +59,8 @@
   border-bottom: 1px solid $primary-theme-color-light;
 }
 
-.contacts__map {
+.contacts__map-wrapper {
   margin-bottom: 42px;
-  // временное решение, когда станет понятно, как делать карту, поменяю
   display: flex;
   justify-content: center;
   width: calc(100% + $side-padding-mobile * 2);
@@ -83,9 +82,10 @@
   }
 }
 
-.contacts__map-img {
+.contacts__map {
   width: 100%;
-  height: auto;
+  min-height: 457px;
+  border: none;
 }
 
 .contacts__button {
