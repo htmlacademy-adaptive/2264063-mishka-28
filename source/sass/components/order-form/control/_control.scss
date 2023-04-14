@@ -18,6 +18,7 @@ $checkbox-mark-color: $secondary-font-color;
   font-size: $font-size-text-l;
   line-height: 18px;
   color: $secondary-font-color;
+  transition: background-color $transition-duration ease;
 
   &--radio,
   &--checkbox {
@@ -60,6 +61,24 @@ $checkbox-mark-color: $secondary-font-color;
     }
   }
 
+  &:hover .control__mark {
+    border-color: $primary-theme-color-light;
+  }
+
+  &:active .control__mark {
+    border-color: #b3b3b3;
+  }
+
+  &:hover::after {
+    opacity: 1;
+    background-color: $primary-theme-color-light;
+  }
+
+  &:focus-within::after {
+    opacity: 1;
+    background-color: $primary-theme-color-light;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 19px;
   }
@@ -75,6 +94,7 @@ $checkbox-mark-color: $secondary-font-color;
   border: 2px solid $primary-font-color;
   width: $mark-size-mobile;
   height: $mark-size-mobile;
+  transition: border-color $transition-duration ease;
 
   &--radio {
     width: $mark-size-mobile + 2;
@@ -116,6 +136,8 @@ $checkbox-mark-color: $secondary-font-color;
   line-height: inherit;
   font-family: inherit;
   background-color: transparent;
+  outline: none;
+  transition: border-color $transition-duration ease;
 
   &::placeholder {
     font-size: inherit;
@@ -137,6 +159,29 @@ $checkbox-mark-color: $secondary-font-color;
     padding-right: 40px;
   }
 
+  &:focus-visible + .control__mark {
+    border-color: $primary-theme-color;
+  }
+
+  @supports not selector(:focus-visible) {
+    &:focus + .control__mark {
+      border-color: $primary-theme-color;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $primary-theme-color-light;
+  }
+
+  &:disabled + .control__mark {
+    border-color: #b3b3b3;
+  }
+
+  &:disabled {
+    border-color: #b3b3b3;
+  }
+
   @media (min-width: $tablet-width) {
     padding-left: 17px;
   }
@@ -150,9 +195,20 @@ $checkbox-mark-color: $secondary-font-color;
   font-size: 17px;
   line-height: 18px;
   font-family: inherit;
+  transition: border-color $transition-duration ease;
+  outline: none;
 
   &::placeholder {
     color: inherit;
     opacity: 0.3;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $primary-theme-color-light;
+  }
+
+  &:disabled {
+    border-color: #b3b3b3;
   }
 }
