@@ -8,6 +8,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
+    padding: 0 0 46px;
   }
 
   @media (min-width: $desktop-width) {
@@ -29,12 +30,16 @@
 
 .production-process__title {
   margin: 0 0 27px;
-  padding-left: 57px;
+  padding: 2px 0 0 57px;
   font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
+  font-size: $font-size-text-l;
+  line-height: $line-height-text-m;
   color: $secondary-font-color;
-  background: url("../../../img/catalog/video-icon.svg") no-repeat left;
+  background: url("../../../img/catalog/video-icon.svg") no-repeat left top;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .production-process__video {
@@ -44,6 +49,7 @@
 
   @media (min-width: $tablet-width) {
     order: -1;
+    margin-bottom: 39px;
   }
 
   @media (min-width: $desktop-width) {
@@ -55,8 +61,13 @@
 .production-process__text {
   margin: 0 0 41px;
   font-size: 13px;
-  line-height: 24px;
+  line-height: $line-height-text-m;
   color: $primary-font-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-text-m;
+    line-height: $line-height-text-l;
+  }
 }
 
 .production-process__button {
