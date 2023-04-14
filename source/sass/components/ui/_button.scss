@@ -29,6 +29,15 @@
     color: $third-font-color;
     font-size: $font-size-modal-buttons;
     line-height: $line-height-modal-buttons;
+    transition: opacity $transition-duration ease;
+
+    &:hover {
+      opacity: $element-hover-opacity;
+    }
+
+    &:active {
+      opacity: $element-down-opacity;
+    }
   }
 
   &--primary:not(&--disabled):hover {
@@ -36,10 +45,18 @@
     color: $third-font-color;
   }
 
-  &--primary:not(&--disabled):focus {
+  &--primary:not(&--disabled):focus-visible {
     outline-color: $primary-theme-color;
     background-color: $primary-font-color;
     color: $third-font-color;
+  }
+
+  @supports not selector(:focus-visible) {
+    &--primary:not(&--disabled):focus {
+      outline-color: $primary-theme-color;
+      background-color: $primary-font-color;
+      color: $third-font-color;
+    }
   }
 
   &--primary:not(&--disabled):active {
