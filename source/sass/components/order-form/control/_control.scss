@@ -45,7 +45,7 @@ $checkbox-mark-color: $secondary-font-color;
 
   &--tel::after {
     width: 30px;
-    mask: url("../../../../img/components/phone.svg") no-repeat 0 2px;
+    mask: url("../img/components/phone.svg") no-repeat 0 2px;
 
     @media (min-width: $tablet-width) {
       mask-position: 0 10px;
@@ -54,7 +54,7 @@ $checkbox-mark-color: $secondary-font-color;
 
   &--email::after {
     width: 35px;
-    mask: url("../../../../img/components/mail.svg") no-repeat 0 5px;
+    mask: url("../img/components/mail.svg") no-repeat 0 5px;
 
     @media (min-width: $tablet-width) {
       mask-position: 0 13px;
@@ -110,7 +110,7 @@ $checkbox-mark-color: $secondary-font-color;
   &--checkbox::before {
     content: "";
     position: absolute;
-    mask: url("../../../../img/components/mark.svg") no-repeat center;
+    mask: url("../img/components/mark.svg") no-repeat center;
     top: 0;
     right: 0;
     bottom: 0;

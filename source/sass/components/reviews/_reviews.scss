@@ -8,7 +8,7 @@
 
 .reviews__container {
   @media (min-width: $tablet-width) {
-    background: url("../../../img/index/reviews/reviews-bg.jpg") no-repeat left;
+    background: url("../img/index/reviews/reviews-bg.jpg") no-repeat left;
     grid-template-rows: 133px 1fr;
   }
 

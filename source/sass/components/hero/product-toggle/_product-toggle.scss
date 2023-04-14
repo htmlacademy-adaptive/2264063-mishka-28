@@ -62,13 +62,13 @@ $decor-opacity-active: 0.3;
   }
 
   &--interior::after {
-    mask: url("../../../../img/index/hero/interior.svg") no-repeat center;
+    mask: url("../img/index/hero/interior.svg") no-repeat center;
     width: 40px;
     right: 35px;
   }
 
   &--toys::after {
-    mask: url("../../../../img/index/hero/toy.svg") no-repeat center;
+    mask: url("../img/index/hero/toy.svg") no-repeat center;
     width: 60px;
     right: 30px;
   }
