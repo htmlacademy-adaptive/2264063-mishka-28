@@ -1,23 +1,78 @@
 @use "../../settings/variables" as *;
 
+
+.order-form__wrapper {
+  @media (min-width: $tablet-width) {
+    &--gray {
+      background-color: $third-theme-color;
+    }
+  }
+}
+
 .order-form__group {
   padding: 30px 0;
+  margin: 0;
   border: none;
   border-top: 1px solid $primary-theme-color-light;
 
-  &--padding-s {
-    padding-top: 10px;
+  .order-form__title {
+    @media (min-width: $tablet-width) {
+      bottom: -75px;
+    }
   }
 
-  &--padding-textarea {
-    padding: 20px 0 17px;
+  &--checkbox {
+    padding: 25px 0 33px;
+  }
+
+  &--username {
+    padding: 29px 0 35px;
+
+    .order-form__title {
+      @media (min-width: $tablet-width) {
+        bottom: -70px;
+      }
+    }
+  }
+
+  &--tel,
+  &--email {
+    padding: 7px 0 35px;
+  }
+
+  &--tel {
+    .order-form__title {
+      @media (min-width: $tablet-width) {
+        bottom: -70px;
+      }
+    }
+  }
+
+  &--email {
+    .order-form__title {
+      @media (min-width: $tablet-width) {
+        bottom: -35px;
+      }
+    }
+  }
+
+  &--textarea {
+    padding: 23px 0 17px;
   }
 
   @media (min-width: $tablet-width) {
     border: none;
-    padding-top: 0;
     display: grid;
     grid-template-columns: 167px 1fr;
+    padding: 40px 0 50px;
+
+    &--tel {
+      padding-bottom: 5px;
+    }
+
+    &--email {
+      padding-top: 5px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -35,8 +90,8 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    padding: 0;
     position: relative;
-    bottom: -25px;
   }
 
   @media (min-width: $desktop-width) {
@@ -50,7 +105,11 @@
   list-style: none;
   display: flex;
   flex-direction: column;
-  row-gap: 24px;
+  row-gap: 23px;
+
+  &--radio {
+    row-gap: 15px;
+  }
 
   &--colors {
     @media (min-width: $tablet-width) {
@@ -60,13 +119,14 @@
 
     @media (min-width: $desktop-width) {
       justify-content: space-between;
-      width: 115%;
+      width: 110%;
     }
   }
 
   @media (min-width: $tablet-width) {
     grid-column: 2;
     grid-row: 1;
+    row-gap: 24px;
   }
 }
 
@@ -114,7 +174,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 175px;
+    padding: 0 225px;
   }
 }
 

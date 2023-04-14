@@ -1,12 +1,30 @@
 @use "../../settings/variables" as *;
 
 .order__container {
-  padding-bottom: 55px;
+  padding: 17px 0 55px;
+
+  @media (min-width: $tablet-width) {
+    padding: 54px 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 99px;
+  }
 }
 
 .order__description {
   font-size: 13px;
-  line-height: 24px;
+  line-height: $line-height-text-m;
   color: $primary-font-color;
-  margin-bottom: 30px;
+  margin: 0 0 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-text-l;
+    line-height: $line-height-text-l;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 175px;
+  }
 }
