@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Academy: Мишка - Каталог</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <base href="https://htmlacademy-adaptive.github.io/2264063-mishka-28/5/">
+</head>
+<body class="page__body">
+<header class="header">
+  <div class="header__container container">
+    <a class="header__logo" href="index.html">
+      <img class="header__logo-image" src="./img/components/site-logo.svg" width="86" height="35" alt="Логотип сайта Mishka.">
+    </a>
+    <nav class="header__nav nav nav--nojs">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link">Каталог товаров</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link nav__link--bordered" href="form.html">Вязание на заказ</a>
+        </li>
+        <li class="nav__item nav__item--desktop-only">
+          <a class="nav__link" href="#">Новые поступления</a>
+        </li>
+        <li class="nav__item nav__item--desktop-only">
+          <a class="nav__link" href="#">Распродажа</a>
+        </li>
+      </ul>
+      <ul class="nav__user-list">
+        <li class="nav__user-item nav__user-item--search">
+          <a class="nav__user-link nav__user-link--bordered" href="#">
+            <span class="nav__user-link-span">Поиск по сайту</span>
+          </a>
+        </li>
+        <li class="nav__user-item nav__user-item--cart">
+          <a class="nav__user-link nav__user-link--bordered" href="#">Корзина:
+            <span class="nav__cart-count">пока пуста</span></a>
+        </li>
+        <li class="header__text">Бесплатная доставка по России</li>
+      </ul>
+    </nav>
+    <button class="header__burger burger">
+      <span class="burger__item">
+        <span class="visually-hidden">Открыть/Закрыть меню.</span>
+      </span>
+    </button>
+  </div>
+</header>
+<main class="cards page__main">
+  <div class="hero hero--simple">
+    <h1 class="hero__title container">Каталог товаров</h1>
+  </div>
+  <div class="container">
+    <ol class="cards__list">
+      <li class="card">
+        <img class="card__image" src="./img/catalog/product-1.jpg" width="260" height="195" alt="Фотография изделия.">
+        <div class="card__content">
+          <h3 class="card__title">
+            <a class="card__link" href="#">
+              Зайчик-попрыгайчик
+            </a>
+          </h3>
+          <p class="card__text">Рост 30 см, вес 200 г</p>
+          <footer class="card__footer">
+            <b class="card__price">1 200 руб.</b>
+            <button class="card__button" type="button">
+              <span class="visually-hidden">Добавить в корзину.</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" fill="none" viewBox="0 0 21 18" aria-label="true" focusable="false">
+                <path fill="currentColor" d="M20.19 6.86h-3.55L13.19.38c-.2-.38-.61-.48-1.02-.28-.4.19-.5.57-.3.95l3.14 5.8H5.78l3.15-5.8c.2-.38 0-.76-.3-.95A.82.82 0 0 0 7.6.38L4.16 6.86H.8c-.4 0-.81.28-.81.76 0 .38.3.76.81.76h.2l.92 2.86c-.2.1-.3.28-.3.57 0 .38.3.67.7.67L4.06 18h12.88l1.73-5.52c.4 0 .7-.29.7-.67 0-.2-.1-.48-.3-.57L20 8.38h.2c.4 0 .81-.28.81-.76s-.4-.76-.81-.76Zm-4.57 9.62H5.07l-1.21-4.1h13.08l-1.32 4.1Zm1.63-5.53H3.35L2.54 8.3h15.52l-.81 2.66Z"/>
+              </svg>
+            </button>
+          </footer>
+        </div>
+      </li>
+      <li class="card">
+        <img class="card__image" src="./img/catalog/product-2.jpg" width="260" height="195" alt="Фотография изделия.">
+        <div class="card__content">
+          <h3 class="card__title">
+            <a class="card__link" href="#">
+              Корзинка для белья
+            </a>
+          </h3>
+          <p class="card__text">Диаметр 15 см, высота 10 см</p>
+          <footer class="card__footer">
+            <b class="card__price">690 руб.</b>
+            <button class="card__button" type="button">
+              <span class="visually-hidden">Добавить в корзину.</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" fill="none" viewBox="0 0 21 18" aria-label="true" focusable="false">
+                <path fill="currentColor" d="M20.19 6.86h-3.55L13.19.38c-.2-.38-.61-.48-1.02-.28-.4.19-.5.57-.3.95l3.14 5.8H5.78l3.15-5.8c.2-.38 0-.76-.3-.95A.82.82 0 0 0 7.6.38L4.16 6.86H.8c-.4 0-.81.28-.81.76 0 .38.3.76.81.76h.2l.92 2.86c-.2.1-.3.28-.3.57 0 .38.3.67.7.67L4.06 18h12.88l1.73-5.52c.4 0 .7-.29.7-.67 0-.2-.1-.48-.3-.57L20 8.38h.2c.4 0 .81-.28.81-.76s-.4-.76-.81-.76Zm-4.57 9.62H5.07l-1.21-4.1h13.08l-1.32 4.1Zm1.63-5.53H3.35L2.54 8.3h15.52l-.81 2.66Z"/>
+              </svg>
+            </button>
+          </footer>
+        </div>
+      </li>
+      <li class="card">
+        <img class="card__image" src="./img/catalog/product-3.jpg" width="260" height="195" alt="Фотография изделия.">
+        <div class="card__content">
+          <h3 class="card__title">
+            <a class="card__link" href="#">
+              Большая корзинка для&nbsp;игрушек
+            </a>
+          </h3>
+          <p class="card__text">Диаметр 30 см, высота 30 см</p>
+          <footer class="card__footer">
+            <b class="card__price">1 500 руб.</b>
+            <button class="card__button" type="button">
+              <span class="visually-hidden">Добавить в корзину.</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" fill="none" viewBox="0 0 21 18" aria-label="true" focusable="false">
+                <path fill="currentColor" d="M20.19 6.86h-3.55L13.19.38c-.2-.38-.61-.48-1.02-.28-.4.19-.5.57-.3.95l3.14 5.8H5.78l3.15-5.8c.2-.38 0-.76-.3-.95A.82.82 0 0 0 7.6.38L4.16 6.86H.8c-.4 0-.81.28-.81.76 0 .38.3.76.81.76h.2l.92 2.86c-.2.1-.3.28-.3.57 0 .38.3.67.7.67L4.06 18h12.88l1.73-5.52c.4 0 .7-.29.7-.67 0-.2-.1-.48-.3-.57L20 8.38h.2c.4 0 .81-.28.81-.76s-.4-.76-.81-.76Zm-4.57 9.62H5.07l-1.21-4.1h13.08l-1.32 4.1Zm1.63-5.53H3.35L2.54 8.3h15.52l-.81 2.66Z"/>
+              </svg>
+            </button>
+          </footer>
+        </div>
+      </li>
+    </ol>
+    <section class="production-process">
+      <header class="product-process__header">
+        <h2 class="production-process__title">Процесс <br>производства</h2>
+      </header>
+      <img class="production-process__video" src="./img/catalog/video-mobile.jpg" width="260" height="150" alt="Видео о процессе производства.">
+      <!-- кнопку play добавлю позже, когда станет понятно, как вставлять видео -->
+      <div class="product-process__content">
+        <p class="production-process__text">
+          По просьбам наших любимых фолловеров мы сняли для
+          вас подробное видео о том, как появляются наши товары.
+        </p>
+        <a class="production-process__button button button--primary" href="form.html">Сделать заказ</a>
+      </div>
+    </section>
+  </div>
+</main>
+<footer class="footer">
+  <div class="footer__container container">
+    <a class="footer__logo" href="index.html">
+      <span class="visually-hidden">Логотип магазина Mishka.</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="102" height="34" fill="none" viewBox="0 0 102 34">
+        <path fill="currentColor" d="M19.2 21.4c0-2.7-.5-5.3-.5-8 0-2.2.4-4.4-.4-6.4l.1-.7c.2-1-3.3-.5-3.8.5-.3.3-.5.6-.4 1l.1.3c-.7 3.1-1.6 6.2-2.6 9.3l-1.3 3.5c-.6-1.1-1.2-2.2-1.6-3.4-1.4-3.4-2.6-6.9-4.3-10.1.2-1.5-3.2-1.4-3.9 0a8.3 8.3 0 0 0-.4 5.1c.3 2 .4 4 .4 6.1 0 4 .4 7.9.4 11.8-.4.4-.5 1 0 1.4l.5.5c1 .7 3.6.1 3.6-1.3 0-4-.3-8.1-.4-12.3v-1.2l.2.4c.6 1.6 1.3 3.2 2.2 4.7 1 1.5 1.3 3 1.8 4.6-.2.2-.3.5-.2.7 0 .2.1.3.3.4.6.5 1.8.3 2.5 0 .3 0 .6-.3.8-.4.3-.2 1-.7.7-1.1v-.3l1-4c.2-1.3.7-2.7 1.2-4l.2 1.9c.2 2.6 0 5 0 7.5l.2 2.5c.1.3.4 1.8.3 2-.8.4-.6 1 .2 1.2 1 .2 2.1 0 2.8-.7 1.2-1 .6-2.8.4-4.2-.5-2.3 0-5 0-7.3ZM27.6 22c0-2-.8-3.8-.8-5.8 0-2.3.2-4.6-.2-6.9 0-.6-4 .1-3.9 1 .3 2.1.2 4.2.2 6.4 0 2 .5 3.9.7 5.9.3 2 0 4.2.1 6.1.1 1 .8 2.7.1 3.6-.4.5 1.5.3 1.6.3.8 0 1.8-.4 2.3-1 .7-.8.2-2.4.1-3.4-.3-2 0-4.1-.2-6.1ZM44 18.8c-2.2-2.8-6-.8-8.7-1.5C34 16.9 34 15 34 13.9a28 28 0 0 0-.3-4c0-1.1 0-2.1.7-3l.8-.2 1.1-.1c1.5-.1 4.6.2 4 2.4-.3 1 3.6.4 4-.5 1.1-4.6-7.4-3.7-9.8-3.1-2.2.6-4.6 1.8-4.8 4.3l.3 3.6c.1 1.4-.2 2.8.3 4.1 1.1 3 5.5 1.6 7.8 1.7 3.8.3 2.7 5.5 2.7 7.9 0 1.2 1.2 3.3.2 4.4-.6.7-2 .7-2.8.8-.8.1-2.2.3-2.7-.5-1-1.4.1-3.8 0-5.3-.2-1-4.2-.1-4 1 .3 2.5-1.4 6 2.4 6.5 2.4.3 5.2-.2 7.5-.9 1.2-.4 2.3-.9 3.2-1.8 1-.9.7-2.3.4-3.5-.5-3 1-6.4-1-8.9ZM61.3 18.6c0-3.8-.7-7.5-.7-11.2 0-2-4-1.3-4 .3 0 3.5.5 7.1.7 10.7v.2l-5.9.2c.2-4.6-.6-9.2-.4-13.8 0-.6-3.9-.1-3.9 1-.2 4.4.6 8.8.5 13.3l-.3 6.4.3 3.2c.1 1 .5 2.3.2 3.3-.2.8 3.6.3 4-.7.4-1.8-.3-4-.5-5.7-.2-1.7 0-3.5.1-5.2 2-.1 4.1-.3 6.1 0l.3 4 .2 3.5c0 1 .1 2.5-.2 3.5-.8 2.1 3.1 2 3.7.4.7-1.9.5-4.2.4-6.1-.2-2.5-.6-5-.6-7.3ZM78.2 23c-.9-2.8-2.4-5.2-3.6-7.8l3-5.9c.7-1.7 1.3-3.7 3-5 .6-.4.6-1-.3-1-.9-.1-2 .2-2.8.7a12.1 12.1 0 0 0-3 4.4l-3 6c0 .1 0 .3-.2.4-.5.3-.8.8-.6 1.3l-2.5 4.6c-.3-5.5-1-11-1.2-16.5 0-1.3-4-.5-3.9 1 .2 6.8 1.2 13.6 1.3 20.5-.3.4-.2.6.1.7 0 1.7 0 3.4-.2 5.2-.5.7.5 1.1 1.1 1.1h.1c.7 0 2.6-.3 2.7-1.4.2-2 .3-4.2.2-6.2a32 32 0 0 0 4.1-5.6c.8 1.5 1.5 3 2 4.6 1 2.7 2.3 5.2 3.1 8 .5 1.7 4.5.6 4-1-1-2.9-2.5-5.3-3.4-8.1ZM101.7 18.4c-.2-.8-1.4-.8-2.3-.8v-1c0-2.7-.2-5.4-.4-8-.2-2.4-1.6-3.2-4-3.1-2.4 0-5.2.5-7.5 1.4a7 7 0 0 0-4.6 5.6c-.5 3 .2 6.2.4 9.2.2 3.5.1 7 .1 10.4 0 .6 4 0 4-1V23l-.2-2.4c1.4-.6 3.7 0 5.1 0 1.1.2 2.2-.1 3.2-.2l.2 6.8c0 1.2.5 3.5-.4 4.5-.4.5 1.5.3 1.6.3.8 0 1.8-.4 2.3-1 1-1 .5-3.8.4-5v-5.7c1-.2 2.3-1 2.1-1.8Zm-14.6-.1-.3-3.7c-.2-2.3.1-5.5 2.3-7 .6-.3 1.7-.2 2.4-.3 1-.2 2-.4 2.8.2 1.2.8 1 3.6 1 4.8l.2 6-1.7.1c-2.3-.2-4.6-.6-6.7-.1ZM24.2 6.7c.5-.1 1-.2 1.5-.5L26 6c.5-.3 1-.8.7-1.4-.5-1.1-.4-2.2-.4-3.4 0-1-1-1.2-1.8-1.2-.7.1-2.2.6-2.2 1.5l.1 3v.4c-.2.2 0 .4 0 .6V6l.4.5a3 3 0 0 0 1.5.3Z"
+        />
+      </svg>
+    </a>
+    <ul class="social">
+      <li class="social__item">
+        <a class="social__link" href="#" target="_blank">
+          <span class="visually-hidden">Наш вконтакте.</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="23" fill="none" viewBox="0 0 28 23" aria-label="true" focusable="false">
+            <path fill="currentColor" d="M1 5.84c0-.86.52-1.32 1.55-1.38l3.97.02c.26 0 .44.13.53.38.4 1.26.86 2.34 1.37 3.25.5.92 1.17 1.97 1.99 3.16.07.15.18.23.34.23.13 0 .22-.06.3-.18l.07-.28.03-4.35c0-.3-.07-.5-.23-.6-.15-.1-.43-.18-.83-.23-.32-.05-.48-.23-.48-.55 0-.07 0-.12.02-.15.38-1.09 1.44-1.63 3.2-1.63l1.5-.03c.67 0 1.23.16 1.67.48.44.32.67.82.67 1.5v5.72c.12.08.24.12.34.12.27 0 .5-.15.7-.45 1.95-2.58 3-4.31 3.17-5.18 0-.02.01-.06.05-.13.12-.25.33-.47.61-.65.29-.19.53-.31.75-.38a.55.55 0 0 1 .24-.05h4.13l.26.03c.36 0 .63.16.83.47.07.1.12.21.15.33a2.4 2.4 0 0 1 .06.55v.18a6.11 6.11 0 0 1-.94 2.2c-.5.78-1.15 1.62-1.93 2.53-.79.9-1.27 1.5-1.47 1.78-.16.2-.24.39-.24.56 0 .13.07.28.21.45l3.9 4.63c.2.26.31.56.31.88 0 .38-.16.7-.48.95-.32.25-.7.4-1.14.43l-.46.02h-4.04c-.02 0-.06 0-.11.02a.86.86 0 0 1-.1.01c-.4 0-.76-.16-1.1-.48-.12-.13-.96-1.12-2.5-2.97a1.39 1.39 0 0 0-.38-.32 38.47 38.47 0 0 0-.53 2.24l-.08.42a1.4 1.4 0 0 1-1.12 1.06l-.37.02h-2.61c-1.48 0-2.95-.63-4.41-1.9a19.3 19.3 0 0 1-3.96-4.95 47.51 47.51 0 0 1-3.28-7.05A1.92 1.92 0 0 1 1 5.84Zm16.01 6.51c-.37 0-.7-.1-1.01-.29a.9.9 0 0 1-.45-.79V5.5c0-.34-.1-.58-.27-.72-.18-.14-.49-.21-.93-.21l-1.52.05c-.76 0-1.34.12-1.73.37.78.36 1.17.93 1.17 1.71v4.43a1.5 1.5 0 0 1-.53 1.04c-.32.28-.68.42-1.07.42-.53 0-.94-.24-1.22-.73a26.16 26.16 0 0 1-3.1-5.63l-.23-.66-3.55-.02c-.23 0-.36.01-.38.03-.03.03-.04.1-.04.22 0 .15.01.3.05.48l.56 1.4c1.49 3.64 3.11 6.51 4.86 8.6 1.75 2.1 3.47 3.15 5.16 3.15h2.66c.1 0 .19-.03.24-.09.05-.06.1-.17.13-.34l.06-.25.5-2.21c.15-.3.27-.5.38-.6.2-.2.42-.28.69-.28.43 0 .86.24 1.3.73l2.27 2.71c.14.22.3.33.45.33h4.4c.53 0 .8-.13.8-.38a.47.47 0 0 0-.08-.25l-3.87-4.55c-.3-.35-.45-.73-.45-1.13 0-.4.14-.8.43-1.16.23-.34.68-.9 1.34-1.67.67-.78 1.25-1.51 1.75-2.19.5-.68.82-1.3.98-1.85l.08-.33a.37.37 0 0 1-.02-.16c0-.07-.01-.14-.03-.19h-4.18c-.27.1-.48.25-.64.45l-.16.48c-.45 1.16-1.6 2.94-3.5 5.36-.36.33-.8.5-1.3.5Z"
+            />
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="#" target="_blank">
+          <span class="visually-hidden">Наш ютуб.</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="23" fill="none" viewBox="0 0 28 23" aria-label="true" focusable="false">
+            <path fill="currentColor" d="m17.85 11.3-5.24-3.5a.65.65 0 0 0-1.01.55v6.98a.65.65 0 0 0 1.01.54l5.24-3.49a.65.65 0 0 0 0-1.09Zm-4.94 2.8V9.58l3.4 2.27-3.4 2.27Zm12.48-8.56a2.4 2.4 0 0 0-1.45-1.63C20.22 2.48 14.25 2.5 14 2.5s-6.22-.02-9.94 1.4a2.4 2.4 0 0 0-1.45 1.64 25.32 25.32 0 0 0-.61 6.3c0 3.26.33 5.22.61 6.3a2.4 2.4 0 0 0 1.45 1.63c3.72 1.43 9.69 1.4 9.94 1.4h.08c.75 0 6.31-.04 9.86-1.4a2.4 2.4 0 0 0 1.45-1.64c.28-1.07.61-3.03.61-6.3 0-3.25-.33-5.22-.61-6.29Zm-1.27 12.27a1.1 1.1 0 0 1-.65.74c-3.5 1.34-9.4 1.32-9.47 1.32-.07 0-5.98.02-9.47-1.32a1.09 1.09 0 0 1-.65-.74c-.27-1-.57-2.85-.57-5.97 0-3.12.3-4.97.57-5.97a1.1 1.1 0 0 1 .65-.74C8.03 3.79 13.93 3.8 14 3.8c.07 0 5.98-.02 9.47 1.32a1.1 1.1 0 0 1 .65.74c.27 1 .57 2.85.57 5.97 0 3.12-.3 4.96-.57 5.97Z"/>
+          </svg>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link" href="#" target="_blank">
+          <span class="visually-hidden">Наш телеграм.</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="23" fill="none" viewBox="0 0 28 23" aria-label="true" focusable="false">
+            <path fill="currentColor" fill-rule="evenodd" d="m23.5 3.7.2.6L21 20a.7.7 0 0 1-1 .5l-8-5.3a.7.7 0 0 1 0-1l2.5-3.2-4.3 2.9h-.7l-5.2-2.6a.7.7 0 0 1 0-1.2l18.4-6.6c.2 0 .5 0 .7.2ZM6.3 10.8l3.6 1.8 7.5-5a.7.7 0 0 1 .9 1l-4.8 6 6.4 4.2 2.3-13.6-15.9 5.6Z" clip-rule="evenodd"/>
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <a class="footer__copyright-link" href="#">Разработано
+      <span class="visually-hidden">HTML Academy</span>
+    </a>
+  </div>
+</footer>
+<div class="modal">
+  <div class="modal__inner">
+    <section class="cart-adding modal__content">
+      <h3 class="cart-adding__title">Добавить в&nbsp;корзину</h3>
+      <form class="cart-adding__form" action="#" method="post">
+        <fieldset class="cart-adding__group">
+          <legend class="cart-adding__heading">Выберите размер:</legend>
+          <ul class="cart-adding__list">
+            <li class="cart-adding__item">
+              <label class="cart-adding__control control-button">
+                <input class="control-button__input visually-hidden" type="radio" name="product-size" value="S" checked>
+                <span class="control-button__mark control-button__mark--radio"></span>
+                <span class="control-button__label">S</span>
+              </label>
+            </li>
+            <li class="cart-adding__item">
+              <label class="cart-adding__control control-button">
+                <input class="control-button__input visually-hidden" type="radio" name="product-size" value="M">
+                <span class="control-button__mark control-button__mark--radio"></span>
+                <span class="control-button__label">M</span>
+              </label>
+            </li>
+            <li class="cart-adding__item">
+              <label class="cart-adding__control control-button">
+                <input class="control-button__input visually-hidden" type="radio" name="product-size" value="L">
+                <span class="control-button__mark control-button__mark--radio"></span>
+                <span class="control-button__label">L</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="button button--add" type="submit">Добавить</button>
+      </form>
+    </section>
+  </div>
+</div>
+<script src="./js/script.js"></script>
+</body>
+</html>
