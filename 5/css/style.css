@@ -130,6 +130,7 @@ body {
 .button {
   display: inline-block;
   padding: 14px;
+  margin: 0;
   min-width: 190px;
   text-decoration: none;
   font-weight: 700;
@@ -660,7 +661,7 @@ body {
   flex-direction: column;
 }
 .hero--index {
-  background-image: url("../../../img/index/hero/hero-mobile.jpg");
+  background-image: url("../img/index/hero/hero-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   padding: 73px 0 0 0;
