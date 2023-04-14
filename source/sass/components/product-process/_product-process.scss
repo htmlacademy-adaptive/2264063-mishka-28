@@ -18,8 +18,8 @@
   }
 }
 
-.product-process__header,
-.product-process__content {
+.production-process__header,
+.production-process__content {
   padding: 0 34px;
 
   @media (min-width: $desktop-width) {
@@ -27,13 +27,13 @@
   }
 }
 
-.product-process__header {
+.production-process__header {
   @media (min-width: $desktop-width) {
     padding-top: 47px;
   }
 }
 
-.product-process__content {
+.production-process__content {
   @media (min-width: $desktop-width) {
     grid-column: 2;
     padding-bottom: 60px;
