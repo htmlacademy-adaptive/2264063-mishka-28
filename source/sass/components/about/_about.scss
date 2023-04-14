@@ -1,11 +1,18 @@
 @use "../../settings/variables" as *;
 
+.about {
+  @media (min-width: $tablet-width) {
+    padding: 45px 0 82px;
+  }
+}
+
 .about__header {
   margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / -1;
     grid-row: 1;
+    margin-bottom: 42px;
   }
 
   @media (min-width: $desktop-width) {
@@ -35,6 +42,10 @@
       grid-column: 3;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .about__item {
@@ -54,4 +65,9 @@
   line-height: $line-height-text-s;
   color: $secondary-font-color;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
