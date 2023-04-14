@@ -37,7 +37,9 @@
   }
 
   &--primary:not(&--disabled):focus {
-
+    outline-color: $primary-theme-color;
+    background-color: $primary-font-color;
+    color: $third-font-color;
   }
 
   &--primary:not(&--disabled):active {
