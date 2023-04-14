@@ -14,8 +14,7 @@
   text-align: center;
 
   cursor: pointer;
-  transition: background-color $transition-duration ease,
-  color $transition-duration ease;
+  transition: background-color $transition-duration ease, color $transition-duration ease;
 
   &--primary {
     background: none;
@@ -61,7 +60,6 @@
 
   &--primary:not(&--disabled):active {
     color: rgba($third-font-color, $element-down-opacity);
-
   }
 
   &:disabled,
