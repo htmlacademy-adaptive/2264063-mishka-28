@@ -16,15 +16,15 @@
   font-size: 13px;
   line-height: $line-height-text-m;
   color: $primary-font-color;
-  margin: 0 0 30px;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     font-size: $font-size-text-l;
     line-height: $line-height-text-l;
-    margin: 0;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 175px;
+    padding: 0 225px;
   }
 }

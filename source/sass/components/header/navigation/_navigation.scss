@@ -78,6 +78,7 @@
 
 .nav__item,
 .nav__user-item {
+  position: relative;
   font-size: $font-size-text-l;
   font-weight: 700;
   line-height: $line-height-text-m;
@@ -92,9 +93,21 @@
   }
 }
 
-.nav__user-item {
-  position: relative;
+.nav__item {
+  @media (min-width: $desktop-width) {
+    &:first-child::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 1px;
+      background-color: $border-color;
+    }
+  }
+}
 
+.nav__user-item {
   &--search .nav__user-link {
     @media (min-width: $tablet-width) {
       padding-left: 40px;
@@ -165,12 +178,6 @@
 .nav__link {
   @media (min-width: $tablet-width) {
     padding-left: 30px;
-  }
-
-  &--bordered {
-    @media (min-width: $desktop-width) {
-      border-left: 1px solid $border-color;
-    }
   }
 }
 

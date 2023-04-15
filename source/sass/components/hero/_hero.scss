@@ -9,7 +9,8 @@
   &--index {
     background-image: url("../img/index/hero/hero-mobile.jpg");
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: center -17px; // Позже переделаю
+    background-size: auto 78%; // Позже переделаю
     padding: 73px 0 0 0;
   }
 
@@ -36,8 +37,13 @@
     &--index {
       min-height: 746px;
       padding-top: 155px;
-      background-size: contain;
+      background-size: cover; // Позже переделаю
+      background-position: center top; // Позже переделаю
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: contain; // Позже переделаю
   }
 }
 

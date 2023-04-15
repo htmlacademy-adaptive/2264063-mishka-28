@@ -1,11 +1,9 @@
 @use "../../settings/variables" as *;
 
 
-.order-form__wrapper {
+.order-form__gray-wrapper {
   @media (min-width: $tablet-width) {
-    &--gray {
-      background-color: $third-theme-color;
-    }
+    background-color: $third-theme-color;
   }
 }
 
