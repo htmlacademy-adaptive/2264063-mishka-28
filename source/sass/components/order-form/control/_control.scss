@@ -132,6 +132,7 @@ $checkbox-mark-color: $secondary-font-color;
   padding: 10px 10px 10px 0;
   border: none;
   border-bottom: 2px solid $secondary-font-color;
+  border-radius: 0;
   font-size: inherit;
   line-height: inherit;
   font-family: inherit;
@@ -190,6 +191,7 @@ $checkbox-mark-color: $secondary-font-color;
 .control__textarea {
   width: 100%;
   border: 2px solid $primary-font-color;
+  border-radius: 0;
   min-height: 142px;
   padding: 17px;
   font-size: 17px;
