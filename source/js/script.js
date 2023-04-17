@@ -23,4 +23,3 @@ if ($modal)
   $modal.addEventListener('mousedown', (e) => {
     e.target.classList.remove('modal--active')
   })
-
