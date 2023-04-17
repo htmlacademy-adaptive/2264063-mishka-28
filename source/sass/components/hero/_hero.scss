@@ -7,11 +7,17 @@
   flex-direction: column;
 
   &--index {
-    background-image: url("../img/index/hero/hero-mobile.jpg");
+    background-image: url("../img/index/hero/background/hero-mobile.jpg");
+    background-color: #f9f9f9;
     background-repeat: no-repeat;
-    background-position: center -17px; // Позже переделаю
-    background-size: auto 78%; // Позже переделаю
+    background-position: center -17px;
+    min-height: 475px;
     padding: 73px 0 0 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/hero/background/hero-mobile@2x.jpg");
+      background-size: 320px auto;
+    }
   }
 
   &--simple {
@@ -30,20 +36,20 @@
       width: 100%;
       height: 24px;
       bottom: -12px;
-      background-image: url("../img/components/zigzag-fill-desktop.svg");
-      background-position: center bottom;
+      background: url("../img/components/zigzag-fill-desktop.svg") center bottom;
     }
 
     &--index {
       min-height: 746px;
       padding-top: 155px;
-      background-size: cover; // Позже переделаю
-      background-position: center top; // Позже переделаю
-    }
-  }
+      background-size: auto 100%;
+      background-position: center top;
+      background-image: url("../img/index/hero/background/hero-desktop.jpg");
 
-  @media (min-width: $desktop-width) {
-    background-size: contain; // Позже переделаю
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index/hero/background/hero-desktop@2x.jpg");
+      }
+    }
   }
 }
 
@@ -74,7 +80,7 @@
   display: flex;
   flex-direction: column;
 
-  @media (max-width: $tablet-width) {
+  @media (max-width: $tablet-width - 1) {
     padding: 0;
   }
 

@@ -11,8 +11,11 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding-top: 19px;
-  padding-bottom: 18px;
+  min-height: 79px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 86px;
+  }
 }
 
 .header__logo {
@@ -64,7 +67,7 @@
   display: none;
   position: absolute;
   right: 30px;
-  bottom: -50px;
+  bottom: -44px;
   margin: 0;
   font-size: $font-size-text-m;
   line-height: $line-height-text-m;

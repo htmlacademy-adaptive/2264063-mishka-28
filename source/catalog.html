@@ -5,12 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Мишка - Каталог</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./img/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body class="page__body">
 <header class="header">
   <div class="header__container container">
     <a class="header__logo" href="index.html">
-      <img class="header__logo-image" src="./img/components/site-logo.svg" width="86" height="35" alt="Логотип сайта Mishka.">
+      <picture>
+        <source media="(min-width: 1150px)" srcset="./img/components/header-logo/mishka-logo-desktop.svg" width="149" height="72">
+        <source media="(min-width: 768px)" srcset="./img/components/header-logo/mishka-logo-tablet.svg" width="113" height="46">
+        <img class="header__logo-image" src="./img/components/header-logo/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина Mishka.">
+      </picture>
     </a>
     <nav class="header__nav nav nav--nojs">
       <ul class="nav__list">
@@ -21,10 +29,10 @@
           <a class="nav__link" href="form.html">Вязание на заказ</a>
         </li>
         <li class="nav__item nav__item--desktop-only">
-          <a class="nav__link" href="#">Новые поступления</a>
+          <a class="nav__link nav__link--desktop-only" href="#">Новые поступления</a>
         </li>
         <li class="nav__item nav__item--desktop-only">
-          <a class="nav__link" href="#">Распродажа</a>
+          <a class="nav__link nav__link--desktop-only" href="#">Распродажа</a>
         </li>
       </ul>
       <ul class="nav__user-list">
@@ -54,7 +62,11 @@
   <div class="container">
     <ol class="cards__list">
       <li class="card">
-        <img class="card__image" src="./img/catalog/product-1.jpg" width="260" height="195" alt="Фотография изделия.">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/catalog/desktop/product-1.jpg 1x, img/catalog/desktop/product-1@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/catalog/tablet/product-1.jpg 1x, img/catalog/tablet/product-1@2x.jpg 2x">
+          <img class="card__image" src="img/catalog/mobile/product-1.jpg" srcset="img/catalog/mobile/product-1@2x.jpg 2x" width="260" height="195" alt="Фотография изделия.">
+        </picture>
         <div class="card__content">
           <h3 class="card__title">
             <a class="card__link" href="#">
@@ -74,7 +86,11 @@
         </div>
       </li>
       <li class="card">
-        <img class="card__image" src="./img/catalog/product-2.jpg" width="260" height="195" alt="Фотография изделия.">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/catalog/desktop/product-2.jpg 1x, img/catalog/desktop/product-2@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/catalog/tablet/product-2.jpg 1x, img/catalog/tablet/product-2@2x.jpg 2x">
+          <img class="card__image" src="img/catalog/mobile/product-2.jpg" srcset="img/catalog/mobile/product-2@2x.jpg 2x" width="260" height="195" alt="Фотография изделия.">
+        </picture>
         <div class="card__content">
           <h3 class="card__title">
             <a class="card__link" href="#">
@@ -94,7 +110,11 @@
         </div>
       </li>
       <li class="card">
-        <img class="card__image" src="./img/catalog/product-3.jpg" width="260" height="195" alt="Фотография изделия.">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/catalog/desktop/product-3.jpg 1x, img/catalog/desktop/product-3@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/catalog/tablet/product-3.jpg 1x, img/catalog/tablet/product-3@2x.jpg 2x">
+          <img class="card__image" src="img/catalog/mobile/product-3.jpg" srcset="img/catalog/mobile/product-3@2x.jpg 2x" width="260" height="195" alt="Фотография изделия.">
+        </picture>
         <div class="card__content">
           <h3 class="card__title">
             <a class="card__link" href="#">
@@ -118,8 +138,23 @@
       <header class="production-process__header">
         <h2 class="production-process__title">Процесс <br>производства</h2>
       </header>
-      <img class="production-process__video" src="./img/catalog/video-mobile.jpg" width="260" height="150" alt="Видео о процессе производства.">
-      <!-- кнопку play добавлю позже, когда станет понятно, как вставлять видео -->
+      <div class="production-process__video-wrapper">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/catalog/video/video-desktop.jpg 1x, img/catalog/video/video-desktop@2x.jpg.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/catalog/video/video-tablet.jpg 1x, img/catalog/video/video-tablet@2x.jpg.jpg 2x">
+          <img class="production-process__video" src="img/catalog/video/video-mobile.jpg" srcset="img/catalog/video/video-mobile@2x.jpg 2x" width="260" height="150" alt="Видео о процессе производства.">
+        </picture>
+        <a class="production-process__video-button" href="#">
+          <span class="visually-hidden">Смотреть видео.</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="101" height="77" fill="none" viewBox="0 0 101 77" aria-label="true" focusable="false">
+            <path fill="currentColor" d="M97 18.1s-.9-7-3.8-10.1c-3.6-4-7.7-4.1-9.5-4.3-13.3-1-33.3-1-33.3-1h-.1s-20 0-33.3 1c-1.9.2-5.9.3-9.5 4.3a23.9 23.9 0 0 0-3.8 10.1s-.9 8.2-.9 16.4v7.7c0 8.2.9 16.4.9 16.4s.9 7 3.8 10.1c3.6 4 8.4 3.9 10.5 4.3 7.6.8 32.4 1 32.4 1s20 0 33.3-1c1.9-.2 5.9-.3 9.5-4.3C96 65.6 97 58.6 97 58.6s.9-8.2.9-16.4v-7.7c0-8.2-.9-16.4-.9-16.4Z"
+            />
+            <path fill="#fff" d="M50.3 76.8c-1 0-25-.3-32.6-1h-.2l-1.1-.2a16 16 0 0 1-10.8-5C2.2 67 1.2 59.8 1.1 59c0-.3-1-8.5-1-16.7v-7.7c0-8.3.9-16.4.9-16.7v-.1c.1-.8 1.2-7.9 4.5-11.6 4-4.4 8.5-4.9 10.7-5.1l.5-.1h.1c13.3-1 33.3-1 33.5-1h.1c.2 0 20.2 0 33.5 1h.1l.5.1c2.2.2 6.7.7 10.7 5.1 3.4 3.6 4.4 10.8 4.5 11.6 0 .3 1 8.5 1 16.8v7.7c0 8.3-.9 16.4-1 16.7v.1c-.1.8-1.2 8-4.5 11.6-4 4.4-8.5 4.9-10.7 5.1l-.5.1h-.1c-13.3.9-33.4.9-33.6.9Zm-31.9-6.4c7.5.7 31.2 1 32 1 .7 0 20.1 0 33-1l.6-.1c1.8-.2 4.6-.5 7.2-3.3a20 20 0 0 0 3.1-8.6c.1-.5.9-8.4.9-16.1v-7.7c0-7.8-.9-15.6-1-16.1-.3-2.4-1.4-6.8-3.1-8.5-2.6-2.9-5.4-3.1-7.2-3.3l-.6-.1c-13.1-1-32.8-1-33-1h-.1c-.2 0-20 0-33 1l-.6.1c-1.8.2-4.6.5-7.2 3.3a20 20 0 0 0-3.1 8.6c-.1.6-.9 8.4-.9 16.1v7.7c0 7.7.9 15.6.9 16.1.3 2.4 1.4 6.8 3.1 8.5 2.3 2.6 5.3 3 7.5 3.3.6-.1 1 0 1.5.1Z"
+            />
+            <path fill="#fff" d="M38.4 20.5v35.7l29.8-17.8-29.8-17.9Z"/>
+          </svg>
+        </a>
+      </div>
       <div class="production-process__content">
         <p class="production-process__text">
           По просьбам наших любимых фолловеров мы сняли для

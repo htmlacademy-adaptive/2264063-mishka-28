@@ -4,6 +4,12 @@ $primary-font-color: #444444;
 $secondary-font-color: #000000;
 $third-font-color: #ffffff;
 
+//Брейкпоинты и размеры сайта
+$tablet-width: 768px;
+$desktop-width: 1150px;
+$side-padding-mobile: 30px;
+$side-padding-other: 50px;
+
 // Текст
 $font-size-text-s: 14px;
 $font-size-text-m: 15px;
@@ -42,12 +48,6 @@ $fourth-theme-color: #ffffff;
 $border-color: #ececec;
 $social-border-color: #e5e5e5;
 $map-pin-color: #6bc6b3;
-
-//Брейкпоинты и размеры сайта
-$tablet-width: 768px;
-$desktop-width: 1150px;
-$side-padding-mobile: 30px;
-$side-padding-other: 50px;
 
 //Состояния интерактивных элементов
 $element-hover-opacity: 0.6;

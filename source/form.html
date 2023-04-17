@@ -5,12 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Мишка - Заказать</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./img/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 <body class="page__body">
 <header class="header">
   <div class="header__container container">
     <a class="header__logo" href="index.html">
-      <img class="header__logo-image" src="./img/components/site-logo.svg" width="86" height="35" alt="Логотип сайта Mishka.">
+      <picture>
+        <source media="(min-width: 1150px)" srcset="./img/components/header-logo/mishka-logo-desktop.svg" width="149" height="72">
+        <source media="(min-width: 768px)" srcset="./img/components/header-logo/mishka-logo-tablet.svg" width="113" height="46">
+        <img class="header__logo-image" src="./img/components/header-logo/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина Mishka.">
+      </picture>
     </a>
     <nav class="header__nav nav nav--nojs">
       <ul class="nav__list">
@@ -21,10 +29,10 @@
           <a class="nav__link">Вязание на заказ</a>
         </li>
         <li class="nav__item nav__item--desktop-only">
-          <a class="nav__link" href="#">Новые поступления</a>
+          <a class="nav__link nav__link--desktop-only" href="#">Новые поступления</a>
         </li>
         <li class="nav__item nav__item--desktop-only">
-          <a class="nav__link" href="#">Распродажа</a>
+          <a class="nav__link nav__link--desktop-only" href="#">Распродажа</a>
         </li>
       </ul>
       <ul class="nav__user-list">

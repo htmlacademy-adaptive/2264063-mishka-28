@@ -9,6 +9,11 @@
 .reviews__container {
   @media (min-width: $tablet-width) {
     background: url("../img/index/reviews/reviews-bg.jpg") no-repeat left;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/reviews/reviews-bg@2x.jpg");
+      background-size: 350px auto;
+    }
     grid-template-rows: 133px 1fr;
   }
 
