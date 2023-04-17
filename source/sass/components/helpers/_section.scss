@@ -4,7 +4,8 @@
   padding: 31px 0 42px;
 
   &--bordered {
-    background: url("../img/components/zigzag-line.svg") repeat-x bottom;
+    background: url("../img/components/zigzag-line.svg") no-repeat bottom;
+    background-size: contain;
   }
 }
 

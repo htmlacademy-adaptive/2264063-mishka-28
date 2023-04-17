@@ -96,7 +96,13 @@
           <dd class="prop__item">15 см</dd>
         </dl>
       </div>
-      <img class="popular-product__image" src="img/catalog/product-4.jpg" width="260" height="315" alt="Вязанные корзинки ручной работы.">
+      <div class="popular-product__image-wrapper">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="./img/index/popular-product/popular-product-desktop.jpg 1x, ./img/index/popular-product/popular-product-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="./img/index/popular-product/popular-product-tablet.jpg 1x, ./img/index/popular-product/popular-product-tablet@2x.jpg 2x">
+          <img class="popular-product__image" src="./img/index/popular-product/popular-product-mobile.jpg" srcset="./img/index/popular-product/popular-product-mobile@2x.jpg 2x" width="260" height="315" alt="Вязанные корзинки ручной работы.">
+        </picture>
+      </div>
       <p class="popular-product__price">Цена: 990 руб.</p>
       <a class="popular-product__button button button--primary" href="form.html">Заказать</a>
     </div>

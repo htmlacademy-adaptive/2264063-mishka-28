@@ -64,11 +64,7 @@
   }
 }
 
-.popular-product__image {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  object-position: center;
+.popular-product__image-wrapper {
   margin: 28px 0 26px;
 
   @media (min-width: $tablet-width) {
@@ -82,6 +78,14 @@
     grid-row: 1 / -1;
     margin: 0;
   }
+}
+
+.popular-product__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
 }
 
 .popular-product__content {
