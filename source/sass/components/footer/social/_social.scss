@@ -1,5 +1,7 @@
 @use "../../../settings/variables" as *;
 
+$icon-hover-color: #46c1ae;
+
 .social {
   display: flex;
   justify-content: center;
@@ -9,10 +11,33 @@
   margin: 0;
   list-style: none;
   border-bottom: 1px solid $social-border-color;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .social__link {
   display: block;
   padding: 5px;
   color: $secondary-theme-color;
+  transition: color $transition-duration ease;
+
+  &:hover {
+    color: $icon-hover-color;
+  }
+
+  &:focus-visible {
+    color: $icon-hover-color;
+  }
+
+  @supports not selector(:focus-visible) {
+    &:focus {
+      color: $icon-hover-color;
+    }
+  }
+
+  &:active {
+    opacity: $element-down-opacity;
+  }
 }

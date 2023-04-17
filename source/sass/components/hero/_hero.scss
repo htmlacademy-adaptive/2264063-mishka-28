@@ -7,9 +7,10 @@
   flex-direction: column;
 
   &--index {
-    background-image: url("../../../img/index/hero/hero-mobile.jpg");
+    background-image: url("../img/index/hero/hero-mobile.jpg");
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: center -17px; // Позже переделаю
+    background-size: auto 78%; // Позже переделаю
     padding: 73px 0 0 0;
   }
 
@@ -21,11 +22,28 @@
 
   @media (min-width: $tablet-width) {
     min-height: 226px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 24px;
+      bottom: -12px;
+      background-image: url("../img/components/zigzag-fill-desktop.svg");
+      background-position: center bottom;
+    }
 
     &--index {
       min-height: 746px;
       padding-top: 155px;
+      background-size: cover; // Позже переделаю
+      background-position: center top; // Позже переделаю
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: contain; // Позже переделаю
   }
 }
 
@@ -39,6 +57,16 @@
 
   &--index {
     margin: 0 0 120px 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-titles-tablet;
+    line-height: $line-height-titles-tablet;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: $font-size-titles-desktop;
+    line-height: $font-size-titles-desktop;
   }
 }
 

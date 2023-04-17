@@ -1,11 +1,26 @@
 @use "../../settings/variables" as *;
 
+.popular-product {
+  @media (min-width: $tablet-width) {
+    padding: 52px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 71px 0;
+  }
+}
+
 .popular-product__header {
   margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
     grid-row: 1;
     grid-column: 1 / -1;
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -13,13 +28,40 @@
   margin-bottom: 4px;
   position: relative;
   z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.popular-product__subtitle {
+  @media (min-width: $tablet-width) {
+    width: 126px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 7px;
+    justify-self: end;
+    width: 100px;
+  }
 }
 
 .popular-product__description {
   margin: 0 0 18px;
-  font-size: 15px;
-  line-height: 24px;
+  font-size: $font-size-text-m;
+  line-height: $line-height-text-m;
   color: $primary-font-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-text-l;
+    line-height: $line-height-text-l;
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
+  }
 }
 
 .popular-product__image {
@@ -32,28 +74,35 @@
   @media (min-width: $tablet-width) {
     grid-column: 2;
     grid-row: 2 / -1;
-    margin: 0;
+    margin: 12px 0 0;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 3;
     grid-row: 1 / -1;
+    margin: 0;
   }
 }
 
 .popular-product__content {
   @media (min-width: $desktop-width) {
     grid-column: 2;
+    margin-top: 35px;
   }
 }
 
 .popular-product__price {
   font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
+  font-size: $font-size-text-l;
+  line-height: $line-height-text-m;
   color: $primary-font-color;
   text-align: center;
   margin: 0 0 25px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    margin-bottom: 33px;
+  }
 
   @media (min-width: $desktop-width) {
     grid-column: 2;

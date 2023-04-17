@@ -1,8 +1,10 @@
 @use "../../../settings/variables" as *;
 
-$mark-size: 38px;
+$mark-size-mobile: 38px;
+$mark-size-other: 52px;
 $radio-mark-color: $primary-theme-color-light;
-$radio-mark-inset-size: 10px;
+$radio-mark-inset-size-mobile: 10px;
+$radio-mark-inset-size-other: 13px;
 $checkbox-mark-color: $secondary-font-color;
 
 .control {
@@ -13,14 +15,20 @@ $checkbox-mark-color: $secondary-font-color;
   cursor: pointer;
   word-wrap: break-word;
   font-weight: 700;
-  font-size: 17px;
+  font-size: $font-size-text-l;
   line-height: 18px;
   color: $secondary-font-color;
+  transition: background-color $transition-duration ease;
 
   &--radio,
   &--checkbox {
     padding-left: 61px;
-    min-height: $mark-size;
+    min-height: $mark-size-mobile;
+
+    @media (min-width: $tablet-width) {
+      min-height: $mark-size-other;
+      padding-left: 78px;
+    }
   }
 
   &--tel::after,
@@ -37,12 +45,42 @@ $checkbox-mark-color: $secondary-font-color;
 
   &--tel::after {
     width: 30px;
-    mask: url("../../../../img/components/phone.svg") no-repeat 0 5px;
+    mask: url("../img/components/phone.svg") no-repeat 0 2px;
+
+    @media (min-width: $tablet-width) {
+      mask-position: 0 10px;
+    }
   }
 
   &--email::after {
     width: 35px;
-    mask: url("../../../../img/components/mail.svg") no-repeat 0 10px;
+    mask: url("../img/components/mail.svg") no-repeat 0 5px;
+
+    @media (min-width: $tablet-width) {
+      mask-position: 0 13px;
+    }
+  }
+
+  &:hover .control__mark {
+    border-color: $primary-theme-color-light;
+  }
+
+  &:active .control__mark {
+    border-color: #b3b3b3;
+  }
+
+  &:hover::after {
+    opacity: 1;
+    background-color: $primary-theme-color-light;
+  }
+
+  &:focus-within::after {
+    opacity: 1;
+    background-color: $primary-theme-color-light;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
   }
 }
 
@@ -54,35 +92,52 @@ $checkbox-mark-color: $secondary-font-color;
   margin: auto 0;
   background-color: transparent;
   border: 2px solid $primary-font-color;
-  width: $mark-size;
-  height: $mark-size;
+  width: $mark-size-mobile;
+  height: $mark-size-mobile;
+  transition: border-color $transition-duration ease;
 
   &--radio {
-    width: $mark-size + 2;
-    height: $mark-size + 2;
+    width: $mark-size-mobile + 2;
+    height: $mark-size-mobile + 2;
     border-radius: 50%;
-    box-shadow: inset 0 0 0 $radio-mark-inset-size #ffffff;
+    box-shadow: inset 0 0 0 $radio-mark-inset-size-mobile #ffffff;
+
+    @media (min-width: $tablet-width) {
+      box-shadow: inset 0 0 0 $radio-mark-inset-size-other #ffffff;
+    }
   }
 
   &--checkbox::before {
     content: "";
     position: absolute;
-    mask: url("../../../../img/components/mark.svg") no-repeat center;
+    mask: url("../img/components/mark.svg") no-repeat center;
     top: 0;
+    right: 0;
     bottom: 0;
     left: 0;
-    right: 0;
+
+    @media (min-width: $tablet-width) {
+      scale: 1.5;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: $mark-size-other;
+    height: $mark-size-other;
   }
 }
 
 .control__input {
   width: 100%;
-  padding: 17px 0;
+  padding: 10px 10px 10px 0;
   border: none;
   border-bottom: 2px solid $secondary-font-color;
   font-size: inherit;
   line-height: inherit;
   font-family: inherit;
+  background-color: transparent;
+  outline: none;
+  transition: border-color $transition-duration ease;
 
   &::placeholder {
     font-size: inherit;
@@ -101,7 +156,34 @@ $checkbox-mark-color: $secondary-font-color;
 
   &--tel,
   &--email {
-    padding: 10px 40px 17px 0;
+    padding-right: 40px;
+  }
+
+  &:focus-visible + .control__mark {
+    border-color: $primary-theme-color;
+  }
+
+  @supports not selector(:focus-visible) {
+    &:focus + .control__mark {
+      border-color: $primary-theme-color;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $primary-theme-color-light;
+  }
+
+  &:disabled + .control__mark {
+    border-color: #b3b3b3;
+  }
+
+  &:disabled {
+    border-color: #b3b3b3;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 17px;
   }
 }
 
@@ -113,9 +195,20 @@ $checkbox-mark-color: $secondary-font-color;
   font-size: 17px;
   line-height: 18px;
   font-family: inherit;
+  transition: border-color $transition-duration ease;
+  outline: none;
 
   &::placeholder {
     color: inherit;
     opacity: 0.3;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $primary-theme-color-light;
+  }
+
+  &:disabled {
+    border-color: #b3b3b3;
   }
 }

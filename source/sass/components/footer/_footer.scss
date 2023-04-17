@@ -1,5 +1,7 @@
 @use "../../settings/variables" as *;
 
+$element-hover-color: #46c1ae;
+
 .footer {
   background-color: $third-theme-color;
 }
@@ -8,6 +10,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 143px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -30,15 +33,54 @@
     top: 55%;
     transform: translateY(-50%);
     right: 0;
-    mask: url("../../../img/components/htmlacademy.svg") no-repeat center /cover;
+    mask: url("../img/components/htmlacademy.svg") no-repeat center /cover;
     width: 30px;
     height: 34px;
     background-color: $primary-theme-color;
+    transition: background-color $transition-duration ease;
+  }
+
+  &:hover::after {
+    background-color: $element-hover-color;
+  }
+
+  &:focus-visible::after {
+    background-color: $element-hover-color;
+  }
+
+  @supports not selector(:focus-visible) {
+    &:focus::after {
+      background-color: $element-hover-color;
+    }
+  }
+
+  &:active::after {
+    opacity: $element-down-opacity;
   }
 }
 
 .footer__logo {
   display: none;
+  color: $secondary-font-color;
+  transition: color $transition-duration ease;
+
+  &[href]:hover {
+    color: $element-hover-color;
+  }
+
+  &:focus-visible {
+    color: $element-hover-color;
+  }
+
+  @supports not selector(:focus-visible) {
+    &:focus {
+      color: $element-hover-color;
+    }
+  }
+
+  &[href]:active {
+    opacity: $element-down-opacity;
+  }
 
   @media (min-width: $tablet-width) {
     display: block;
