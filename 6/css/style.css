@@ -428,13 +428,15 @@ body {
 .nav--active {
   display: flex;
 }
-.nav--nojs {
-  display: flex;
-  width: 100%;
-  position: static;
-}
-.nav--nojs + .burger {
-  display: none;
+@media (max-width: 767px) {
+  .nav--nojs {
+    display: flex;
+    width: 100%;
+    position: static;
+  }
+  .nav--nojs + .burger {
+    display: none;
+  }
 }
 @media (min-width: 768px) {
   .nav {
