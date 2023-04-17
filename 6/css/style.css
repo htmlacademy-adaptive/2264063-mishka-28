@@ -54,7 +54,7 @@ body {
 }
 .section--bordered {
   background: url("../img/components/zigzag-line.svg") no-repeat bottom;
-  background-size: contain;
+  background-size: 100% auto;
 }
 @media (min-width: 1150px) {
   .section--bordered {
