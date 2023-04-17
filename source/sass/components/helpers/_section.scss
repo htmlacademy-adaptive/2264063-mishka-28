@@ -6,6 +6,11 @@
   &--bordered {
     background: url("../img/components/zigzag-line.svg") no-repeat bottom;
     background-size: contain;
+
+    @media (min-width: $desktop-width) {
+      background-size: $desktop-width - $side-padding-other * 2 auto;
+      background-position: center bottom;
+    }
   }
 }
 
