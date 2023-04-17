@@ -30,6 +30,8 @@
   }
 }
 
+/*=== Lists ===*/
+
 .nav__list,
 .nav__user-list {
   display: flex;
@@ -75,6 +77,8 @@
     padding-left: 0;
   }
 }
+
+/*=== Items ===*/
 
 .nav__item,
 .nav__user-item {
@@ -146,6 +150,8 @@
   }
 }
 
+/*=== Links ===*/
+
 .nav__link,
 .nav__user-link {
   display: block;
@@ -172,12 +178,26 @@
 
   @media (min-width: $tablet-width) {
     border: none;
+    padding-top: 31px;
+    padding-bottom: 31px;
   }
 }
 
 .nav__link {
   @media (min-width: $tablet-width) {
     padding-left: 30px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 31px;
+    padding-bottom: 31px;
+
+    &--desktop-only {
+      padding-top: 21px;
+      padding-bottom: 21px;
+    }
   }
 }
 
