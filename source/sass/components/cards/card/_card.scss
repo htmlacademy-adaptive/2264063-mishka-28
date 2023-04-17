@@ -1,14 +1,18 @@
 @use "../../../settings/variables" as *;
 
 .card {
+  display: flex;
+  flex-direction: column;
   flex: 1;
+  border: 1px solid $border-color;
+  background-color: $fourth-theme-color;
 
-  &:hover .card__content {
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
   }
 
-  &:active .card__content {
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
   }
 }
 
@@ -63,20 +67,8 @@
 }
 
 .card__link {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid $border-color;
-  background-color: $fourth-theme-color;
   text-decoration: none;
-  height: 100%;
-
-  @media (min-width: $tablet-width) {
-    flex-direction: row;
-  }
-
-  @media (min-width: $desktop-width) {
-    flex-direction: column;
-  }
+  color: inherit;
 }
 
 .card__text {
