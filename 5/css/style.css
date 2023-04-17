@@ -1481,13 +1481,21 @@ body {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
   flex: 1;
+  border: 1px solid #ececec;
+  background-color: #ffffff;
 }
-.card:hover .card__content {
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+@media (min-width: 768px) {
+  .card {
+    flex-direction: row;
+  }
 }
-.card:active .card__content {
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+@media (min-width: 1150px) {
+  .card {
+    flex-direction: column;
+  }
 }
 
 .card__image {
@@ -1541,22 +1549,8 @@ body {
 }
 
 .card__link {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid #ececec;
-  background-color: #ffffff;
   text-decoration: none;
-  height: 100%;
-}
-@media (min-width: 768px) {
-  .card__link {
-    flex-direction: row;
-  }
-}
-@media (min-width: 1150px) {
-  .card__link {
-    flex-direction: column;
-  }
+  color: inherit;
 }
 
 .card__text {
