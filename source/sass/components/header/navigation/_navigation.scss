@@ -197,12 +197,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 31px;
-    padding-bottom: 31px;
+    padding: 32px 36px 31px 32px;
+    font-size: $font-size-text-l;
 
     &--desktop-only {
-      padding-top: 21px;
-      padding-bottom: 21px;
+      font-size: $font-size-text-m;
+      padding: 21px 31px;
     }
   }
 }

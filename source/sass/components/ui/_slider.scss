@@ -45,6 +45,10 @@ $slider-button-color: $secondary-font-color;
     position: relative;
     top: -5px;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
+  }
 }
 
 .slider__arrow {

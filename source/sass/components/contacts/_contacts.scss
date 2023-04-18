@@ -6,6 +6,16 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 58px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 74px 0 105px;
+  }
+}
+
+.contacts__container {
+  @media (min-width: $desktop-width) {
+    grid-template-rows: 134px 1fr auto;
+  }
 }
 
 .contacts__header {
@@ -56,6 +66,7 @@
   @media (min-width: $desktop-width) {
     grid-column: 2;
     flex-direction: column;
+    margin: 18px 0;
   }
 }
 
@@ -80,6 +91,10 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 7px;
   }
 }
 
@@ -140,6 +155,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    justify-self: center;
+    justify-self: end;
+    left: -6px;
   }
 }

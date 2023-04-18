@@ -13,4 +13,8 @@
   margin: 0;
   color: $primary-font-color;
   padding: 9px 0 11px;
+
+  @media (min-width: $desktop-width) {
+    padding: 7px 0 12px;
+  }
 }

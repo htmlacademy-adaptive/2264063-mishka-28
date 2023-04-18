@@ -2,8 +2,13 @@
 
 .reviews {
   padding-bottom: 52px;
+
   @media (min-width: $tablet-width) {
     padding: 31px 0 83px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 89px;
   }
 }
 
@@ -65,7 +70,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 44px;
+    margin-bottom: 40px;
   }
 }
 
@@ -77,6 +82,10 @@
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: $font-size-text-l;
   }
 }
 
