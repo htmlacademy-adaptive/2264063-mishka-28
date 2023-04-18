@@ -10,7 +10,7 @@ $checkbox-mark-color: $secondary-font-color;
 .control {
   position: relative;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   padding: 0;
   cursor: pointer;
   word-wrap: break-word;
@@ -22,6 +22,8 @@ $checkbox-mark-color: $secondary-font-color;
 
   &--radio,
   &--checkbox {
+    flex-direction: row;
+    align-items: center;
     padding-left: 61px;
     min-height: $mark-size-mobile;
 
@@ -44,8 +46,8 @@ $checkbox-mark-color: $secondary-font-color;
   }
 
   &--tel::after {
-    width: 30px;
-    mask: url("../img/components/phone.svg") no-repeat -2px 9px;
+    width: 32px;
+    mask: url("../img/components/phone.svg") no-repeat 0 9px;
 
     @media (min-width: $tablet-width) {
       mask-position: 0 13px;
@@ -138,7 +140,6 @@ $checkbox-mark-color: $secondary-font-color;
 }
 
 .control__input {
-  width: 100%;
   padding: 12px 10px 12px 0;
   border: none;
   border-bottom: 2px solid $secondary-font-color;
@@ -168,7 +169,7 @@ $checkbox-mark-color: $secondary-font-color;
 
   &--tel,
   &--email {
-    padding-right: 55px;
+    padding-right: 37px;
     padding-bottom: 15px;
   }
 
