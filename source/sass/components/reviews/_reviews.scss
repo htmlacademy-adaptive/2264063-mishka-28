@@ -1,6 +1,7 @@
 @use "../../settings/variables" as *;
 
 .reviews {
+  padding-bottom: 52px;
   @media (min-width: $tablet-width) {
     padding: 31px 0 68px;
   }
@@ -56,7 +57,7 @@
 }
 
 .reviews__text {
-  margin: 0 0 33px 0;
+  margin: 0 0 31px 0;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 61px;
@@ -80,6 +81,7 @@
 
 .reviews__author-social {
   line-height: $line-height-text-m;
+  font-size: $font-size-text-l;
   display: block;
 }
 

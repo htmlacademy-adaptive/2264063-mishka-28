@@ -10,8 +10,8 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  min-height: 79px;
+  justify-content: flex-end;
+  min-height: 78px;
 
   @media (min-width: $tablet-width) {
     min-height: 86px;
@@ -20,7 +20,10 @@
 
 .header__logo {
   margin: 0 auto;
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 15;
   order: 1;
   transition: opacity $transition-duration ease;
@@ -38,6 +41,10 @@
   }
 
   @media (min-width: $tablet-width) {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
     margin-left: 0;
   }
 

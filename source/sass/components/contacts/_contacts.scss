@@ -1,7 +1,7 @@
 @use "../../settings/variables" as *;
 
 .contacts {
-  padding: 46px 0 57px;
+  padding: 38px 0 37px;
 }
 
 .contacts__header {
@@ -37,10 +37,11 @@
 .contacts__type,
 .contacts__info {
   margin: 0;
-  padding: 20px 0;
+  padding: 19px 0 10px;
 }
 
 .contacts__table {
+  margin-bottom: 52px;
   @media (min-width: $tablet-width) {
     grid-column: 1 / -1;
     display: flex;
@@ -74,10 +75,10 @@
 }
 
 .contacts__map-wrapper {
-  margin-bottom: 42px;
+  margin-bottom: 41px;
   display: flex;
   justify-content: center;
-  width: calc(100% + $side-padding-mobile * 2);
+  width: 100vw;
   position: relative;
   left: calc(-1 * $side-padding-mobile);
 
@@ -98,7 +99,7 @@
 
 .contacts__map {
   width: 100%;
-  min-height: 457px;
+  min-height: 455px;
   border: none;
 }
 
