@@ -38,6 +38,10 @@ $element-hover-color: #46c1ae;
     height: 41px;
     background-color: $primary-theme-color;
     transition: background-color $transition-duration ease;
+
+    @media (min-width: $tablet-width) {
+      top: 45%;
+    }
   }
 
   &:hover::after {
@@ -56,6 +60,11 @@ $element-hover-color: #46c1ae;
 
   &:active::after {
     opacity: $element-down-opacity;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 23px;
+    padding-right: 53px;
   }
 }
 

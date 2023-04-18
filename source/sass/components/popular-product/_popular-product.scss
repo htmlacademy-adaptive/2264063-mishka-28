@@ -2,7 +2,7 @@
 
 .popular-product {
   @media (min-width: $tablet-width) {
-    padding: 52px 0;
+    padding: 52px 0 68px;
   }
 
   @media (min-width: $desktop-width) {
@@ -36,6 +36,8 @@
 
 .popular-product__subtitle {
   @media (min-width: $tablet-width) {
+    line-height: 1;
+    align-self: center;
     width: 126px;
     text-align: center;
   }

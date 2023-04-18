@@ -116,7 +116,7 @@
 .nav__user-item {
   &--search .nav__user-link {
     @media (min-width: $tablet-width) {
-      padding-left: 40px;
+      padding-left: 41px;
       padding-right: 40px;
     }
   }
@@ -126,13 +126,18 @@
     content: "";
     position: absolute;
     top: 48%;
-    left: 32px;
+    left: 30px;
     height: 18px;
     width: 21px;
     transform: translateY(-50%);
     background-color: rgba($secondary-font-color, 0.2);
     z-index: -1;
     transition: background-color $transition-duration ease;
+
+    @media (min-width: $tablet-width) {
+      top: 50%;
+      left: 32px;
+    }
   }
 
   &--search::after {
@@ -159,7 +164,7 @@
   display: block;
   text-decoration: none;
   color: $secondary-font-color;
-  padding: 27px 30px 27px 76px;
+  padding: 27px 30px 27px 83px;
   height: 100%;
   text-align: left;
   vertical-align: middle;
@@ -187,9 +192,8 @@
 
 .nav__link {
   @media (min-width: $tablet-width) {
-    padding-left: 30px;
-    padding-top: 21px;
-    padding-bottom: 21px;
+    font-size: $font-size-text-m;
+    padding: 22px 7px 21px 30px;
   }
 
   @media (min-width: $desktop-width) {

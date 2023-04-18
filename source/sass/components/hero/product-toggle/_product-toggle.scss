@@ -27,6 +27,7 @@ $decor-opacity-active: 0.3;
   transition: background-color $transition-duration ease, transform $transition-duration ease;
 
   @media (min-width: $tablet-width) {
+    padding-top: 26px;
     font-size: 20px;
     line-height: $line-height-text-l;
   }
@@ -73,6 +74,10 @@ $decor-opacity-active: 0.3;
     mask: url("../img/index/hero/toy.svg") no-repeat center;
     width: 60px;
     right: 28px;
+
+    @media (min-width: $tablet-width) {
+      right: 33px;
+    }
   }
 
   &--interior:hover {
@@ -104,4 +109,8 @@ $decor-opacity-active: 0.3;
   display: block;
   width: 150px;
   margin: 0 auto 0 0;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 35px;
+  }
 }
