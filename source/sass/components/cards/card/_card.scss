@@ -43,7 +43,7 @@
 }
 
 .card__title {
-  margin: 0 0 6px 0;
+  margin: 0 0 5px 0;
   font-weight: 700;
   font-size: $font-size-text-l;
   line-height: $line-height-text-m;
@@ -111,6 +111,10 @@
   background: none;
   color: rgba($secondary-font-color, 0.2);
   transition: color $transition-duration ease;
+  position: relative;
+  left: 8px;
+  top: -1px;
+
 
   &:hover {
     color: $primary-theme-color;

@@ -1,7 +1,7 @@
 @use "../../settings/variables" as *;
 
 .cards {
-  padding-bottom: 58px;
+  padding-bottom: 55px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 64px;
@@ -14,7 +14,7 @@
 
 .cards__list {
   list-style: none;
-  gap: 30px;
+  gap: 28px;
   margin: 0;
   padding: 30px 0;
   display: flex;
