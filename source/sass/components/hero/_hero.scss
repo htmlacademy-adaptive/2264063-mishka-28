@@ -68,6 +68,16 @@
       background-size: cover;
       bottom: -21px;
     }
+
+    &--simple {
+      padding-top: 4px;
+      min-height: 256px;
+    }
+
+    &--simple::after {
+      background-size: contain;
+      bottom: -17px;
+    }
   }
 }
 
