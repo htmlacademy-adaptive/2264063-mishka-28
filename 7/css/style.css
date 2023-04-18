@@ -2194,6 +2194,10 @@ body {
   }
 }
 
+.order-form__item {
+  display: flex;
+  flex-direction: column;
+}
 @media (min-width: 768px) {
   .order-form__item {
     display: flex;
@@ -2262,7 +2266,7 @@ body {
 .control {
   position: relative;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   padding: 0;
   cursor: pointer;
   word-wrap: break-word;
@@ -2273,6 +2277,8 @@ body {
   transition: background-color 0.15s ease;
 }
 .control--radio, .control--checkbox {
+  flex-direction: row;
+  align-items: center;
   padding-left: 61px;
   min-height: 38px;
 }
@@ -2292,9 +2298,9 @@ body {
   opacity: 0.2;
 }
 .control--tel::after {
-  width: 30px;
-  -webkit-mask: url("../img/components/phone.svg") no-repeat -2px 9px;
-          mask: url("../img/components/phone.svg") no-repeat -2px 9px;
+  width: 32px;
+  -webkit-mask: url("../img/components/phone.svg") no-repeat 0 9px;
+          mask: url("../img/components/phone.svg") no-repeat 0 9px;
 }
 @media (min-width: 768px) {
   .control--tel::after {
@@ -2391,7 +2397,6 @@ body {
 }
 
 .control__input {
-  width: 100%;
   padding: 12px 10px 12px 0;
   border: none;
   border-bottom: 2px solid #000000;
@@ -2417,7 +2422,7 @@ body {
   background-color: #000000;
 }
 .control__input--tel, .control__input--email {
-  padding-right: 55px;
+  padding-right: 37px;
   padding-bottom: 15px;
 }
 .control__input:focus-visible + .control__mark {
