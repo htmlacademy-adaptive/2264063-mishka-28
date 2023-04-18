@@ -38,6 +38,7 @@
   transition: box-shadow $transition-duration ease;
 
   @media (min-width: $tablet-width) {
+    padding-left: 32px;
     padding-top: 27px;
   }
 }
@@ -126,5 +127,9 @@
 
   &:active {
     opacity: $element-down-opacity;
+  }
+
+  @media (min-width: $tablet-width) {
+    left: 3px;
   }
 }

@@ -50,6 +50,10 @@
         background-image: url("../img/index/hero/background/hero-desktop@2x.jpg");
       }
     }
+
+    &--simple {
+      padding-top: 26px;
+    }
   }
 
   @media (min-width: $desktop-width) {
