@@ -51,6 +51,10 @@ $checkbox-mark-color: $secondary-font-color;
       mask-position: 0 13px;
       width: 51px;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 33px;
+    }
   }
 
   &--email::after {
@@ -60,6 +64,10 @@ $checkbox-mark-color: $secondary-font-color;
     @media (min-width: $tablet-width) {
       mask-position: 0 19px;
       width: 54px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 36px;
     }
   }
 
