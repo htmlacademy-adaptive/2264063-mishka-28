@@ -25,8 +25,13 @@ $modal-shadow-color: #0001013f;
 .modal__inner {
   width: 100%;
   max-width: 566px;
-  padding: 29px 30px 46px;
+  padding: 29px 28px 46px;
   background-color: $modal-bg-color;
   border: 1px solid $modal-border-color;
   box-shadow: 0 5px 10px $modal-shadow-color;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 35px;
+    padding-bottom: 50px;
+  }
 }
