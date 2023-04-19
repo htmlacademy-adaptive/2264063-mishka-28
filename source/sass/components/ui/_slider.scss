@@ -24,7 +24,7 @@ $slider-button-color: $secondary-font-color;
 
 .slider__item {
   display: none;
-  padding: 15px 0 30px;
+  padding: 15px 0 33px;
 
   &--active {
     display: block;
@@ -41,7 +41,13 @@ $slider-button-color: $secondary-font-color;
   @media (min-width: $tablet-width) {
     grid-column: 2;
     grid-row: 2;
-    max-width: 165px;
+    max-width: 175px;
+    position: relative;
+    top: -5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 0;
   }
 }
 

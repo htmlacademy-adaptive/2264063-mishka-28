@@ -4,13 +4,13 @@ $mark-size-mobile: 38px;
 $mark-size-other: 52px;
 $radio-mark-color: $primary-theme-color-light;
 $radio-mark-inset-size-mobile: 10px;
-$radio-mark-inset-size-other: 13px;
+$radio-mark-inset-size-other: 14px;
 $checkbox-mark-color: $secondary-font-color;
 
 .control {
   position: relative;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   padding: 0;
   cursor: pointer;
   word-wrap: break-word;
@@ -22,6 +22,8 @@ $checkbox-mark-color: $secondary-font-color;
 
   &--radio,
   &--checkbox {
+    flex-direction: row;
+    align-items: center;
     padding-left: 61px;
     min-height: $mark-size-mobile;
 
@@ -44,20 +46,30 @@ $checkbox-mark-color: $secondary-font-color;
   }
 
   &--tel::after {
-    width: 30px;
-    mask: url("../img/components/phone.svg") no-repeat 0 2px;
+    width: 32px;
+    mask: url("../img/components/phone.svg") no-repeat 0 9px;
 
     @media (min-width: $tablet-width) {
-      mask-position: 0 10px;
+      mask-position: 0 13px;
+      width: 51px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 33px;
     }
   }
 
   &--email::after {
     width: 35px;
-    mask: url("../img/components/mail.svg") no-repeat 0 5px;
+    mask: url("../img/components/mail.svg") no-repeat 0 15px;
 
     @media (min-width: $tablet-width) {
-      mask-position: 0 13px;
+      mask-position: 0 19px;
+      width: 54px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 36px;
     }
   }
 
@@ -128,20 +140,20 @@ $checkbox-mark-color: $secondary-font-color;
 }
 
 .control__input {
-  width: 100%;
-  padding: 10px 10px 10px 0;
+  padding: 12px 10px 12px 0;
   border: none;
   border-bottom: 2px solid $secondary-font-color;
   border-radius: 0;
-  font-size: inherit;
+  font-size: 19px;
   line-height: inherit;
   font-family: inherit;
+  letter-spacing: 1px;
   background-color: transparent;
   outline: none;
   transition: border-color $transition-duration ease;
 
   &::placeholder {
-    font-size: inherit;
+    font-size: $font-size-text-l;
     line-height: inherit;
     color: inherit;
     opacity: 0.3;
@@ -157,7 +169,8 @@ $checkbox-mark-color: $secondary-font-color;
 
   &--tel,
   &--email {
-    padding-right: 40px;
+    padding-right: 37px;
+    padding-bottom: 15px;
   }
 
   &:focus-visible + .control__mark {
@@ -193,10 +206,11 @@ $checkbox-mark-color: $secondary-font-color;
   border: 2px solid $primary-font-color;
   border-radius: 0;
   min-height: 142px;
-  padding: 17px;
+  padding: 16px;
   font-size: 17px;
   line-height: 18px;
   font-family: inherit;
+  letter-spacing: 1px;
   transition: border-color $transition-duration ease;
   outline: none;
 

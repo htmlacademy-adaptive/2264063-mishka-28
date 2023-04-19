@@ -1,7 +1,21 @@
 @use "../../settings/variables" as *;
 
 .contacts {
-  padding: 46px 0 57px;
+  padding: 38px 0 37px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 58px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 74px 0 105px;
+  }
+}
+
+.contacts__container {
+  @media (min-width: $desktop-width) {
+    grid-template-rows: 134px 1fr auto;
+  }
 }
 
 .contacts__header {
@@ -18,7 +32,7 @@
 .contacts__address {
   margin: 0;
   display: grid;
-  grid-template-columns: 75px 1fr;
+  grid-template-columns: 76px 1fr;
 
   color: $primary-font-color;
   font-size: $font-size-text-s;
@@ -37,19 +51,22 @@
 .contacts__type,
 .contacts__info {
   margin: 0;
-  padding: 20px 0;
+  padding: 19px 0 10px;
 }
 
 .contacts__table {
+  margin-bottom: 52px;
+
   @media (min-width: $tablet-width) {
     grid-column: 1 / -1;
     display: flex;
-    margin: 20px 0 30px;
+    margin: 31px 0 38px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 2;
     flex-direction: column;
+    margin: 18px 0;
   }
 }
 
@@ -71,13 +88,21 @@
   &:active {
     border-color: rgba(#46c1ae, 0.1);
   }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 7px;
+  }
 }
 
 .contacts__map-wrapper {
-  margin-bottom: 42px;
+  margin-bottom: 41px;
   display: flex;
   justify-content: center;
-  width: calc(100% + $side-padding-mobile * 2);
+  width: 100vw;
   position: relative;
   left: calc(-1 * $side-padding-mobile);
 
@@ -85,6 +110,7 @@
     width: calc(100% + $side-padding-other * 2);
     left: calc(-1 * $side-padding-other);
     grid-column: 1 / -1;
+    margin-bottom: 57px;
   }
 
   @media (min-width: $desktop-width) {
@@ -98,7 +124,7 @@
 
 .contacts__map {
   width: 100%;
-  min-height: 457px;
+  min-height: 455px;
   border: none;
 }
 
@@ -123,9 +149,13 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+    position: relative;
+    top: 9px;
+    left: -2px;
   }
 
   @media (min-width: $desktop-width) {
-    justify-self: center;
+    justify-self: end;
+    left: -6px;
   }
 }

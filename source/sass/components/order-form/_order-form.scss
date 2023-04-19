@@ -8,23 +8,34 @@
 }
 
 .order-form__group {
-  padding: 30px 0;
+  padding: 33px 0;
   margin: 0;
   border: none;
   border-top: 1px solid $primary-theme-color-light;
 
   .order-form__title {
     @media (min-width: $tablet-width) {
-      bottom: -75px;
+      bottom: -79px;
+    }
+
+    @media (min-width: $desktop-width) {
+      bottom: -82px;
+      padding-left: 60px;
     }
   }
 
   &--checkbox {
     padding: 25px 0 33px;
+
+    .order-form__title {
+      @media (min-width: $tablet-width) {
+        bottom: -68px;
+      }
+    }
   }
 
   &--username {
-    padding: 29px 0 35px;
+    padding: 29px 0 33px;
 
     .order-form__title {
       @media (min-width: $tablet-width) {
@@ -35,13 +46,13 @@
 
   &--tel,
   &--email {
-    padding: 7px 0 35px;
+    padding: 6px 0 35px;
   }
 
   &--tel {
     .order-form__title {
       @media (min-width: $tablet-width) {
-        bottom: -70px;
+        bottom: -68px;
       }
     }
   }
@@ -49,32 +60,56 @@
   &--email {
     .order-form__title {
       @media (min-width: $tablet-width) {
-        bottom: -35px;
+        bottom: -37px;
       }
     }
   }
 
   &--textarea {
     padding: 23px 0 17px;
+
+    .order-form__title {
+      @media (min-width: $tablet-width) {
+        bottom: -71px;
+      }
+    }
   }
 
   @media (min-width: $tablet-width) {
     border: none;
     display: grid;
-    grid-template-columns: 167px 1fr;
-    padding: 40px 0 50px;
+    grid-template-columns: 168px 1fr;
+    padding: 45px 0 49px;
+
+    &--username {
+      padding-top: 35px;
+    }
+
+    &--checkbox {
+      padding-top: 35px;
+    }
 
     &--tel {
+      padding-top: 32px;
       padding-bottom: 5px;
     }
 
     &--email {
-      padding-top: 5px;
+      padding-top: 0;
+    }
+
+    &--textarea {
+      padding: 35px 0 54px;
     }
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 175px 1fr 175px;
+
+    &--textarea {
+      padding-top: 35px;
+      padding-bottom: 49px;
+    }
   }
 }
 
@@ -113,10 +148,11 @@
     @media (min-width: $tablet-width) {
       flex-direction: row;
       flex-wrap: wrap;
+      column-gap: 36px;
     }
 
     @media (min-width: $desktop-width) {
-      justify-content: space-between;
+      column-gap: 32px;
       width: 110%;
     }
   }
@@ -129,6 +165,9 @@
 }
 
 .order-form__item {
+  display: flex;
+  flex-direction: column;
+
   @media (min-width: $tablet-width) {
     display: flex;
     column-gap: 25px;
@@ -136,7 +175,7 @@
 
   &--colors {
     @media (min-width: $tablet-width) {
-      width: 50%;
+      width: 45%;
     }
 
     @media (min-width: $desktop-width) {
@@ -160,6 +199,8 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    font-size: $font-size-text-l;
+    line-height: $line-height-text-l;
   }
 }
 
@@ -178,8 +219,12 @@
 
 .order-form__button {
   width: 100%;
+  padding-top: 15px;
+  padding-bottom: 13px;
+  font-size: $font-size-text-l;
 
   @media (min-width: $tablet-width) {
     width: auto;
+    min-width: 230px;
   }
 }

@@ -2,16 +2,16 @@
 
 .popular-product {
   @media (min-width: $tablet-width) {
-    padding: 52px 0;
+    padding: 52px 0 68px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 71px 0;
+    padding: 71px 0 95px;
   }
 }
 
 .popular-product__header {
-  margin-bottom: 18px;
+  margin-bottom: 17px;
 
   @media (min-width: $tablet-width) {
     grid-row: 1;
@@ -36,13 +36,16 @@
 
 .popular-product__subtitle {
   @media (min-width: $tablet-width) {
+    line-height: 1;
+    align-self: center;
     width: 126px;
     text-align: center;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 7px;
+    margin: 0 -15px 15px;
     justify-self: end;
+    align-self: end;
     width: 100px;
   }
 }
@@ -60,12 +63,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 50px;
+    margin-bottom: 54px;
   }
 }
 
 .popular-product__image-wrapper {
-  margin: 28px 0 26px;
+  margin: 28px 0 25px;
 
   @media (min-width: $tablet-width) {
     grid-column: 2;

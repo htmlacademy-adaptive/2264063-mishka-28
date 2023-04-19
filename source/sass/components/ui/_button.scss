@@ -30,6 +30,7 @@
     font-size: $font-size-modal-buttons;
     line-height: $line-height-modal-buttons;
     transition: opacity $transition-duration ease;
+    padding-top: 20px;
 
     &:hover {
       opacity: $element-hover-opacity;

@@ -1,14 +1,21 @@
 @use "../../settings/variables" as *;
 
 .reviews {
+  padding-bottom: 52px;
+
   @media (min-width: $tablet-width) {
-    padding: 31px 0 68px;
+    padding: 31px 0 83px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 89px;
   }
 }
 
 .reviews__container {
   @media (min-width: $tablet-width) {
     background: url("../img/index/reviews/reviews-bg.jpg") no-repeat left;
+    min-height: 457px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/index/reviews/reviews-bg@2x.jpg");
@@ -56,14 +63,14 @@
 }
 
 .reviews__text {
-  margin: 0 0 33px 0;
+  margin: 0 0 31px 0;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 61px;
+    margin-bottom: 57px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 44px;
+    margin-bottom: 40px;
   }
 }
 
@@ -76,11 +83,20 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: $font-size-text-l;
+  }
 }
 
 .reviews__author-social {
   line-height: $line-height-text-m;
+  font-size: $font-size-text-l;
   display: block;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 2px;
+  }
 }
 
 .reviews__button {

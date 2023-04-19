@@ -19,7 +19,7 @@ $element-hover-color: #46c1ae;
 
 .footer__copyright-link {
   text-decoration: none;
-  padding: 25px 50px 20px 0;
+  padding: 28px 56px 30px 0;
   font-weight: 700;
   font-size: 19px;
   line-height: 18px;
@@ -30,14 +30,18 @@ $element-hover-color: #46c1ae;
     content: "";
     position: absolute;
     display: block;
-    top: 55%;
+    top: 49%;
     transform: translateY(-50%);
     right: 0;
     mask: url("../img/components/htmlacademy.svg") no-repeat center /cover;
-    width: 30px;
-    height: 34px;
+    width: 29px;
+    height: 41px;
     background-color: $primary-theme-color;
     transition: background-color $transition-duration ease;
+
+    @media (min-width: $tablet-width) {
+      top: 45%;
+    }
   }
 
   &:hover::after {
@@ -56,6 +60,11 @@ $element-hover-color: #46c1ae;
 
   &:active::after {
     opacity: $element-down-opacity;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 23px;
+    padding-right: 57px;
   }
 }
 

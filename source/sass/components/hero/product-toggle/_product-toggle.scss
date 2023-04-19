@@ -12,10 +12,11 @@ $decor-opacity-hover: 0.7;
 $decor-opacity-active: 0.3;
 
 .product-toggle {
+  font-family: inherit;
   display: block;
   width: 100%;
   border: none;
-  padding: 24px 0;
+  padding: 24px 0 32px;
   text-align: left;
   color: $third-font-color;
   font-weight: 700;
@@ -26,6 +27,7 @@ $decor-opacity-active: 0.3;
   transition: background-color $transition-duration ease, transform $transition-duration ease;
 
   @media (min-width: $tablet-width) {
+    padding-top: 26px;
     font-size: 20px;
     line-height: $line-height-text-l;
   }
@@ -65,12 +67,17 @@ $decor-opacity-active: 0.3;
     mask: url("../img/index/hero/interior.svg") no-repeat center;
     width: 40px;
     right: 35px;
+    top: 4px;
   }
 
   &--toys::after {
     mask: url("../img/index/hero/toy.svg") no-repeat center;
     width: 60px;
-    right: 30px;
+    right: 28px;
+
+    @media (min-width: $tablet-width) {
+      right: 33px;
+    }
   }
 
   &--interior:hover {
@@ -102,4 +109,8 @@ $decor-opacity-active: 0.3;
   display: block;
   width: 150px;
   margin: 0 auto 0 0;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 35px;
+  }
 }
