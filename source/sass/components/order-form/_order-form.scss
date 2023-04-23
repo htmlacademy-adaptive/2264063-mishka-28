@@ -165,9 +165,6 @@
 }
 
 .order-form__item {
-  display: flex;
-  flex-direction: column;
-
   @media (min-width: $tablet-width) {
     display: flex;
     column-gap: 25px;

@@ -1,6 +1,6 @@
 .visually-hidden {
   position: absolute;
-  width: 1px;
+  width: 1px !important; /* stylelint-disable-line declaration-no-important */
   height: 1px;
   margin: -1px;
   border: 0;

@@ -4,14 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="./css/style.min.css">
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   <link rel="icon" href="./img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./img/favicons/apple.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="page__body">
-<header class="header">
+<header class="header header--nojs">
   <div class="header__container container">
     <a class="header__logo">
       <picture>
@@ -20,7 +20,7 @@
         <img class="header__logo-image" src="./img/components/header-logo/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина Mishka.">
       </picture>
     </a>
-    <nav class="header__nav nav nav--nojs">
+    <nav class="header__nav nav">
       <ul class="nav__list">
         <li class="nav__item">
           <a class="nav__link" href="catalog.html">Каталог товаров</a>
@@ -98,9 +98,9 @@
       </div>
       <div class="popular-product__image-wrapper">
         <picture>
-          <source type="image/webp" media="(min-width: 1150px)" srcset="img/index/popular-product/webp/popular-product-desktop.webp 1x, img/index/popular-product/webp/popular-product-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/index/popular-product/webp/popular-product-tablet.webp 1x, img/index/popular-product/webp/popular-product-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/index/popular-product/webp/popular-product-mobile.webp 1x, img/index/popular-product/webp/popular-product-mobile@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 1150px)" srcset="img/index/popular-product/popular-product-desktop.webp 1x, img/index/popular-product/popular-product-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/index/popular-product/popular-product-tablet.webp 1x, img/index/popular-product/popular-product-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/index/popular-product/popular-product-mobile.webp 1x, img/index/popular-product/popular-product-mobile@2x.webp 2x">
           <source media="(min-width: 1150px)" srcset="img/index/popular-product/popular-product-desktop.jpg 1x, img/index/popular-product/popular-product-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/index/popular-product/popular-product-tablet.jpg 1x, img/index/popular-product/popular-product-tablet@2x.jpg 2x">
           <img class="popular-product__image" src="img/index/popular-product/popular-product-mobile.jpg" srcset="img/index/popular-product/popular-product-mobile@2x.jpg 2x" width="260" height="315" alt="Вязанные корзинки ручной работы.">
@@ -138,7 +138,7 @@
       <ul class="about__list about__list--right">
         <li class="about__item">
           <svg class="about__image" aria-hidden="true" focusable="false" width="35" height="34">
-            <use href="./img/sprites.svg#create-width-love"></use>
+            <use href="./img/sprites.svg#create-with-love"></use>
           </svg>
           <span class="about__text">Связано вручную<br>с любовью и умилением</span>
         </li>
@@ -221,8 +221,7 @@
         </dl>
         <dl class="contacts__address">
           <dt class="contacts__type">адрес:</dt>
-          <dd class="contacts__info">г.&nbsp;Санкт-Петербург<br>ул.&nbsp;Большая&nbsp;Конюшенная<br>д.&nbsp;19/8, офис 101
-          </dd>
+          <dd class="contacts__info">г.&nbsp;Санкт-Петербург<br>ул.&nbsp;Большая&nbsp;Конюшенная<br>д.&nbsp;19/8, офис 101</dd>
         </dl>
       </div>
       <div class="contacts__map-wrapper">
@@ -308,6 +307,6 @@
     </section>
   </div>
 </div>
-<script src="./js/script.js"></script>
+<script src="./js/script.min.js"></script>
 </body>
 </html>

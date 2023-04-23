@@ -1,3 +1,4 @@
+const pageHeader = document.querySelector('.header')
 const nav = document.querySelector('.nav')
 const burgerButton = document.querySelector('.burger')
 const orderButton = document.querySelector('.popular-product__button')
@@ -12,7 +13,7 @@ const orderButtonHandler = () => {
   if (modal) modal.classList.add('modal--active')
 }
 
-nav.classList.remove('nav--nojs')
+pageHeader.classList.remove('header--nojs')
 
 burgerButton.addEventListener('click', burgerButtonHandler)
 
