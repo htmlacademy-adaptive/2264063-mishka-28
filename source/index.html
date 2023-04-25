@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Автор: HTML Academy, Категория: товары ручной работы, вязанные корзинки на заказ, изделия для дома.">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="./css/style.min.css">
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
@@ -13,13 +14,13 @@
 <body>
 <header class="header header--nojs">
   <div class="header__container container">
-    <a class="header__logo">
+    <span class="header__logo">
       <picture>
         <source media="(min-width: 1150px)" srcset="./img/components/header-logo/mishka-logo-desktop.svg" width="149" height="72">
         <source media="(min-width: 768px)" srcset="./img/components/header-logo/mishka-logo-tablet.svg" width="113" height="46">
         <img src="./img/components/header-logo/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина Mishka.">
       </picture>
-    </a>
+    </span>
     <nav class="header__nav nav">
       <ul class="nav__list">
         <li class="nav__item">
@@ -196,10 +197,10 @@
         </ul>
         <div class="slider__buttons">
           <button class="slider__arrow slider__arrow--left" type="button">
-            <span class="visually-hidden">Назад.</span>
+            <span class="visually-hidden">Предыдущий отзыв.</span>
           </button>
           <button class="slider__arrow slider__arrow--right" type="button">
-            <span class="visually-hidden">Вперед.</span>
+            <span class="visually-hidden">Следующий отзыв.</span>
           </button>
         </div>
       </div>
@@ -221,25 +222,25 @@
         </dl>
         <dl class="contacts__address">
           <dt class="contacts__type">адрес:</dt>
-          <dd class="contacts__info">г.&nbsp;Санкт-Петербург<br>ул.&nbsp;Большая&nbsp;Конюшенная<br>д.&nbsp;19/8, офис 101</dd>
+          <dd class="contacts__info">г.&nbsp;Санкт-Петербург<br>ул.&nbsp;Большая&nbsp;Конюшенная<br>д.&nbsp;19/8, офис 101
+          </dd>
         </dl>
       </div>
       <div class="contacts__map-wrapper">
-        <span class="visually-hidden">Карта проезда.</span>
-        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d471.605903757055!2d30.323283356582444!3d59.93884213620195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca640933%3A0x8403eb878242dbd5!2z0JTQvtGF0L7QtNC90YvQuSDQtNC-0Lwg0J0uINCQLiDQnNC10LvRjNGG0LXRgNCw!5e0!3m2!1sru!2sru!4v1681467716036!5m2!1sru!2sru" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe class="contacts__map" title="Карта проезда." src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d471.605903757055!2d30.323283356582444!3d59.93884213620195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca640933%3A0x8403eb878242dbd5!2z0JTQvtGF0L7QtNC90YvQuSDQtNC-0Lwg0J0uINCQLiDQnNC10LvRjNGG0LXRgNCw!5e0!3m2!1sru!2sru!4v1681467716036!5m2!1sru!2sru" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-      <a class="contacts__button button button--primary" href="#">Напишите нам</a>
+      <a class="contacts__button button button--primary" role="button" href="#">Напишите нам</a>
     </div>
   </section>
 </main>
 <footer class="footer">
   <div class="footer__container container">
-    <a class="footer__logo">
+    <span class="footer__logo">
       <span class="visually-hidden">Логотип магазина Mishka.</span>
       <svg aria-hidden="true" focusable="false" width="102" height="34">
         <use href="./img/sprites.svg#footer-logo"></use>
       </svg>
-    </a>
+    </span>
     <ul class="social">
       <li class="social__item">
         <a class="social__link" href="#" target="_blank">
@@ -307,6 +308,6 @@
     </section>
   </div>
 </div>
-<script src="./js/script.min.js"></script>
+<script src="./js/script.min.js" crossorigin="anonymous"></script>
 </body>
 </html>

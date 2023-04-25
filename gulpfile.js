@@ -97,7 +97,6 @@ const createWebp = () => {
   return gulp.src([
     'source/img/**/*.{jpg,png}',
     '!source/img/favicons/*.png',
-    '!source/img/index/hero/**/*.{jpg,png}',
     '!source/img/index/reviews/*.{jpg,png}',
   ])
     .pipe(squoosh({
