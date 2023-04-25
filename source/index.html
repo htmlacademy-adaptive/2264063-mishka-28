@@ -10,14 +10,14 @@
   <link rel="apple-touch-icon" href="./img/favicons/apple.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
 </head>
-<body class="page__body">
+<body>
 <header class="header header--nojs">
   <div class="header__container container">
     <a class="header__logo">
       <picture>
         <source media="(min-width: 1150px)" srcset="./img/components/header-logo/mishka-logo-desktop.svg" width="149" height="72">
         <source media="(min-width: 768px)" srcset="./img/components/header-logo/mishka-logo-tablet.svg" width="113" height="46">
-        <img class="header__logo-image" src="./img/components/header-logo/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина Mishka.">
+        <img src="./img/components/header-logo/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина Mishka.">
       </picture>
     </a>
     <nav class="header__nav nav">
@@ -55,7 +55,7 @@
     </button>
   </div>
 </header>
-<main class="page__main">
+<main>
   <section class="hero hero--index section">
     <div class="hero__container container">
       <h1 class="hero__title hero__title--index section__title">Милые штуки ручной<br>работы для дома</h1>
@@ -74,7 +74,7 @@
     </div>
   </section>
   <section class="popular-product section section--bordered">
-    <div class="popular-product__container section__container container">
+    <div class="section__container container">
       <header class="popular-product__header section__header">
         <p class="popular-product__title section__title">Вязаные корзинки</p>
         <h2 class="popular-product__subtitle section__subtitle">Товар недели</h2>
@@ -111,7 +111,7 @@
     </div>
   </section>
   <section class="about section">
-    <div class="about__container section__container container">
+    <div class="section__container container">
       <header class="about__header section__header">
         <h2 class="section__title">Коротко о нас:</h2>
       </header>
@@ -163,7 +163,7 @@
         <h2 class="section__title">Отзывы</h2>
       </header>
       <div class="reviews__slider slider">
-        <ul class="reviews__list slider__list">
+        <ul class="slider__list">
           <li class="reviews__item slider__item slider__item--active">
             <p class="reviews__text">
               Я молодая мама, но всё равно фотографии не набирали и близко такого количества
