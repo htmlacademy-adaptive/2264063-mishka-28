@@ -92,6 +92,7 @@
 }
 
 .popular-product__content {
+  margin-bottom: 20px;
   @media (min-width: $desktop-width) {
     grid-column: 2;
     margin-top: 35px;

@@ -37,6 +37,12 @@
   }
 }
 
+.reviews__title {
+  @media (min-width: $tablet-width) {
+    padding-right: 200px;
+  }
+}
+
 .reviews__slider {
   margin-bottom: 38px;
 
@@ -82,6 +88,8 @@
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
+    display: inline-block;
+    padding-right: 200px;
   }
 
   @media (min-width: $desktop-width) {
@@ -96,6 +104,8 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 2px;
+    padding-right: 200px;
+    word-break: break-all;
   }
 }
 

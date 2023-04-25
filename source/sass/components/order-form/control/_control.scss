@@ -212,6 +212,7 @@ $checkbox-mark-color: $secondary-font-color;
   letter-spacing: 1px;
   transition: border-color $transition-duration ease;
   outline: none;
+  resize: none;
 
   &::placeholder {
     color: inherit;

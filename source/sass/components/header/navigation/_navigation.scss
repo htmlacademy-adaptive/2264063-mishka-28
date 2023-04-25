@@ -64,7 +64,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 0;
+    padding-left: 40px;
   }
 }
 
@@ -109,8 +109,7 @@
     }
   }
 
-  &--search::after,
-  &--cart::after {
+  &::after {
     content: "";
     position: absolute;
     top: 48%;
@@ -142,6 +141,10 @@
 
   &:active::after {
     background-color: rgba($primary-theme-color, 0.2);
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 86px;
   }
 }
 

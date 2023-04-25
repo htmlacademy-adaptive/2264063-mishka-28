@@ -24,7 +24,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 117px 1fr 50%;
-    grid-template-rows: 118px 1fr auto auto;
+    grid-template-rows: minmax(118px, auto) 1fr auto auto;
     column-gap: 58px;
   }
 }
@@ -32,6 +32,7 @@
 .section__header {
   display: flex;
   flex-direction: column;
+  z-index: 2;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
