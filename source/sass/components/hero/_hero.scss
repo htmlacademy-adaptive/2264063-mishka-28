@@ -31,6 +31,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    .hero__title {
+      padding: 1em 0;
+    }
   }
 
   @media (min-width: $tablet-width) {
