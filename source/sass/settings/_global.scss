@@ -6,7 +6,11 @@
   box-sizing: border-box;
 }
 
-body {
+.page__body {
   margin: 0;
   font-family: $font-family;
+
+  &--locked {
+    overflow: hidden;
+  }
 }
