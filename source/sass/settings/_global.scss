@@ -5,12 +5,22 @@
 *::after {
   box-sizing: border-box;
 }
+.page {
+ height: 100%;
+}
 
 .page__body {
   margin: 0;
   font-family: $font-family;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 
   &--locked {
     overflow: hidden;
   }
+}
+
+.page__main {
+  flex: 1;
 }
