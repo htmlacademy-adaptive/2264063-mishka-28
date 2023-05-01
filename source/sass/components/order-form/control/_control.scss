@@ -168,8 +168,16 @@ $checkbox-mark-color: $secondary-font-color;
 
   &--tel,
   &--email {
-    padding-right: 37px;
+    padding-right: 40px;
     padding-bottom: 15px;
+
+    @media (min-width: $tablet-width) {
+      padding-right: 60px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-right: 40px;
+    }
   }
 
   &:focus-visible + .control__mark {
@@ -212,6 +220,7 @@ $checkbox-mark-color: $secondary-font-color;
   letter-spacing: 1px;
   transition: border-color $transition-duration ease;
   outline: none;
+  resize: none;
 
   &::placeholder {
     color: inherit;

@@ -16,7 +16,7 @@
   overflow: hidden;
 
   @media (min-width: $desktop-width) {
-    grid-template-rows: 134px 1fr auto;
+    grid-template-rows: minmax(134px, auto) 1fr auto;
   }
 }
 
@@ -28,6 +28,12 @@
     grid-row: 1;
     margin: 0;
     align-items: end;
+  }
+}
+
+.contacts__title {
+  @media (min-width: $desktop-width) {
+    padding-right: 60%;
   }
 }
 
@@ -56,6 +62,11 @@
   padding: 19px 0 10px;
 }
 
+.contacts__type {
+  word-break: break-all;
+  padding-right: 10px;
+}
+
 .contacts__table {
   margin-bottom: 52px;
 
@@ -77,6 +88,7 @@
   text-decoration: none;
   border-bottom: 1px solid $primary-theme-color-light;
   transition: color $transition-duration ease, border-color $transition-duration ease;
+  word-break: break-all;
 
   &:hover {
     border-color: #46c1ae;

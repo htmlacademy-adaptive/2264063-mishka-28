@@ -97,6 +97,7 @@
   font-size: $font-size-text-m;
   line-height: $line-height-text-m;
   color: $primary-font-color;
+  max-width: 300px;
 
   @media (min-width: $tablet-width) {
     display: block;
