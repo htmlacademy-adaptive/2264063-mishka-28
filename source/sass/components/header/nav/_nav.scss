@@ -112,7 +112,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: 48%;
+    top: 50%;
     left: 30px;
     height: 18px;
     width: 21px;
@@ -155,7 +155,7 @@
   display: block;
   text-decoration: none;
   color: $secondary-font-color;
-  padding: 27px 30px 27px 83px;
+  padding: 27px 30px 27px 76px;
   height: 100%;
   text-align: left;
   vertical-align: middle;
@@ -176,8 +176,7 @@
 
   @media (min-width: $tablet-width) {
     border: none;
-    padding-top: 31px;
-    padding-bottom: 31px;
+    padding: 31px 30px 31px 83px;
   }
 }
 

@@ -48,16 +48,22 @@ $burger-color: $secondary-theme-color;
     bottom: 0;
   }
 
+  &--active {
+    left: -3px;
+  }
+
   &--active .burger__item {
     opacity: 0;
   }
 
   &--active::before {
     transform: translateY($burger-height * 0.5 - 1) rotate(-45deg);
+    width: 130%;
   }
 
   &--active::after {
     transform: translateY($burger-height * -0.5 + 1) rotate(45deg);
+    width: 130%;
   }
 
   @media (min-width: $tablet-width) {

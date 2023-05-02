@@ -7,8 +7,12 @@
   @media (max-width: $tablet-width - 1) {
     &--nojs &__logo {
       position: static;
+      display: flex;
+      justify-content: center;
       transform: translate(0, 0);
-      padding: 1em 0;
+      padding: 21px 0 18px;
+      width: 100%;
+      border-bottom: 1px solid $border-color;
     }
 
     &--nojs .nav {
@@ -19,6 +23,11 @@
 
     &--nojs .burger {
       display: none;
+    }
+
+    &--nojs .header__container {
+      padding: 0;
+      flex-direction: column;
     }
   }
 }

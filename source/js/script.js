@@ -5,6 +5,7 @@ const orderButton = document.querySelector('.popular-product__button')
 const modal = document.querySelector('.modal') || null
 const cartButton = document.querySelectorAll('.card__button')
 const body = document.querySelector('.page__body')
+const contactsMap = document.querySelector('.contacts__map-wrapper')
 
 const burgerButtonHandler = (e) => {
   e.currentTarget.classList.toggle('burger--active')
@@ -17,6 +18,7 @@ const orderButtonHandler = () => {
 }
 
 pageHeader.classList.remove('header--nojs')
+contactsMap.classList.remove('contacts__map-wrapper--nojs')
 
 burgerButton.addEventListener('click', burgerButtonHandler)
 
