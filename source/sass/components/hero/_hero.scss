@@ -97,7 +97,9 @@
     }
 
     &--simple::after {
-      bottom: -17px;
+      bottom: -18px;
+      width: 100%;
+      left: 0;
     }
   }
 }
