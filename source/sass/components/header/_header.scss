@@ -1,17 +1,44 @@
 @use "../../settings/variables" as *;
 
 .header {
+  background-color: #f1f1f1;
+  position: relative;
+  min-height: 80px;
+  z-index: 10;
+
+  &--index {
+    background-color: #f9f9f9;
+  }
+
+  &::before {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    content: "";
+    border-bottom: 1px solid #ececec;
+    background-color: #ffffff;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      top: 0;
+      height: 89px;
+    }
+  }
+
   @media (max-width: $tablet-width - 1) {
     &--nojs .header__container {
       flex-direction: column;
       padding: 0;
-
-      &::before {
-        top: 0;
-        height: 80px;
-      }
     }
 
+    &::before {
+      top: 0;
+      height: 80px;
+    }
     &--nojs .header__logo {
       margin: 21px auto 19px auto;
     }
@@ -29,33 +56,10 @@
 }
 
 .header__container {
-  position: relative;
+  min-height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 80px;
-  z-index: 10;
-
-  &::before {
-    position: absolute;
-    z-index: -1;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    height: 100%;
-    content: "";
-    border-bottom: 1px solid #ececec;
-    background-color: #ffffff;
-  }
-
-  @media (min-width: $tablet-width) {
-    background-color: #f9f9f9;
-
-    &::before {
-      top: 0;
-      height: 89px;
-    }
-  }
 }
 
 .header__logo {

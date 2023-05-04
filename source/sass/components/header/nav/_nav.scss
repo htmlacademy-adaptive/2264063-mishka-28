@@ -32,11 +32,9 @@
     flex-wrap: wrap;
     flex-direction: row;
     width: 100%;
-    max-width: 85%;
-
 
     &--left {
-      max-width: 55%;
+      max-width: 50%;
       column-gap: 37px;
     }
 
@@ -44,6 +42,7 @@
       justify-content: flex-end;
       position: relative;
       align-self: flex-end;
+      padding-left: 115px;
     }
   }
 

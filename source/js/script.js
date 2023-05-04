@@ -18,7 +18,10 @@ const orderButtonHandler = () => {
 }
 
 pageHeader.classList.remove('header--nojs')
-contactsMap.classList.remove('contacts__map-wrapper--nojs')
+
+if (contactsMap) {
+  contactsMap.classList.remove('contacts__map-wrapper--nojs')
+}
 
 burgerButton.addEventListener('click', burgerButtonHandler)
 

@@ -39,7 +39,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    min-height: 226px;
+    min-height: 160px;
     position: relative;
 
     &::after {
@@ -68,8 +68,12 @@
     }
 
     &--simple {
-      padding-top: 26px;
+      padding-bottom: 38px;
+      .hero__title {
+        padding: 0;
+      }
     }
+
   }
 
   @media (min-width: $desktop-width) {
@@ -88,8 +92,8 @@
     }
 
     &--simple {
-      padding-top: 4px;
-      min-height: 256px;
+      padding-bottom: 59px;
+      min-height: 193px;
     }
 
     &--simple::after {
