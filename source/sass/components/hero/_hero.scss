@@ -74,7 +74,8 @@
 
   @media (min-width: $desktop-width) {
     &--index {
-      padding-top: 159px;
+      padding-top: 95px;
+      min-height: 682px;
     }
 
     &::after {
