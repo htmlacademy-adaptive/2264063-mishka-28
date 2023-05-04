@@ -10,7 +10,7 @@ $burger-color: $secondary-theme-color;
   background: none;
   border: none;
   padding: 0;
-  position: relative;
+  position: absolute;
   align-self: center;
   height: $burger-height;
   width: $burger-width;
@@ -48,21 +48,19 @@ $burger-color: $secondary-theme-color;
     bottom: 0;
   }
 
-  &--active {
-    left: -3px;
-  }
-
   &--active .burger__item {
     opacity: 0;
   }
 
   &--active::before {
-    transform: translateY($burger-height * 0.5 - 1) rotate(-45deg);
+    //transform: translateY($burger-height * 0.5 - 1) rotate(-45deg);
+    transform: translate(-4px, 6px) rotate(-45deg);
     width: 130%;
   }
 
   &--active::after {
-    transform: translateY($burger-height * -0.5 + 1) rotate(45deg);
+    //transform: translateY($burger-height * -0.5 + 1) rotate(45deg);
+    transform: translate(-3px, -6px) rotate(45deg);
     width: 130%;
   }
 
