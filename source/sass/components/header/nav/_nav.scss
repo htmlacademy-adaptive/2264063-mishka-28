@@ -52,10 +52,12 @@
 
     &--left {
       column-gap: 0;
+      position: relative;
+      left: -36px;
     }
 
     &--right {
-      padding-left: 155px;
+      padding-left: 100px;
     }
   }
 }
@@ -128,6 +130,8 @@
   @media (min-width: $desktop-width) {
     &--left {
       font-size: $font-size-text-l;
+      display: flex;
+      align-items: center;
 
       &:first-child::after {
         content: "";
@@ -138,15 +142,13 @@
         width: 1px;
         background-color: $border-color;
       }
-
-      &:nth-child(2n - 1) .nav__link {
-        padding-left: 0;
-      }
     }
 
     &--desktop-only {
-      display: block;
+      display: flex;
       font-size: $font-size-text-m;
+      position: relative;
+      left: 6px;
     }
   }
 }
