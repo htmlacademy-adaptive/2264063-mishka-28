@@ -101,6 +101,7 @@
   line-height: $line-height-text-m;
   font-size: $font-size-text-l;
   display: block;
+  margin-top: 3px;
 
   @media (min-width: $tablet-width) {
     margin-top: 2px;
@@ -111,6 +112,7 @@
 
 .reviews__button {
   width: 100%;
+  z-index: 2;
 
   @media (min-width: $tablet-width) {
     grid-row: 1;

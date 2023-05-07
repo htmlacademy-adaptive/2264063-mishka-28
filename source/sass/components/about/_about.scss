@@ -1,19 +1,19 @@
 @use "../../settings/variables" as *;
 
 .about {
-  padding-bottom: 23px;
+  padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     padding: 57px 0 50px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 50px 0 54px;
+    padding: 50px 0 59px;
   }
 }
 
 .about__header {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / -1;
@@ -33,10 +33,10 @@
 
   display: flex;
   flex-direction: column;
-  gap: 35px;
+  gap: 33px;
 
   &--left {
-    margin-bottom: 30px;
+    margin-bottom: 33px;
 
     @media (min-width: $desktop-width) {
       grid-column: 2;
@@ -52,6 +52,10 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     gap: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 53px;
   }
 }
 
@@ -69,6 +73,56 @@
 
 .about__image {
   color: $primary-theme-color;
+
+  &--eco-material {
+    margin: -5px 0 0 8px;
+  }
+
+  &--good-style {
+    margin-top: -4px;
+  }
+
+  &--likes-up {
+    margin: 1px 0 0 7px;
+  }
+
+  &--create-width-love {
+    margin: -2px 0 0 3px;
+  }
+
+  &--our-manufacture {
+    margin: -1px 0 0 -6px;
+  }
+
+  &--gift-package {
+    margin: -3px 0 0 3px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--eco-material {
+      margin: -1px 0 0 8px;
+    }
+
+    &--good-style {
+      margin: 1px 0 0 1px;
+    }
+
+    &--likes-up {
+      margin: 6px 0 0 8px;
+    }
+
+    &--create-width-love {
+      margin: 3px 0 0 3px;
+    }
+
+    &--our-manufacture {
+      margin: 4px 0 0 -6px;
+    }
+
+    &--gift-package {
+      margin: 2px 0 0 3px;
+    }
+  }
 }
 
 .about__text {

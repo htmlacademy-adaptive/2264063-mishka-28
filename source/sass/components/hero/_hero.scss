@@ -5,6 +5,7 @@
   min-height: 177px;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 
   &--index {
     /* stylelint-disable */
@@ -38,7 +39,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    min-height: 226px;
+    min-height: 160px;
     position: relative;
 
     &::after {
@@ -51,10 +52,10 @@
     }
 
     &--index {
-      min-height: 746px;
-      padding-top: 155px;
-      background-size: auto 100%;
-      background-position: center top;
+      min-height: 680px;
+      padding-top: 90px;
+      background-size: auto;
+      background-position: center -66px;
       /* stylelint-disable */
       background-image: url("../img/index/hero/background/hero-desktop.jpg");
       background-image: image-set(
@@ -67,30 +68,38 @@
     }
 
     &--simple {
-      padding-top: 26px;
+      padding-bottom: 38px;
+
+      .hero__title {
+        padding: 0;
+      }
     }
   }
 
   @media (min-width: $desktop-width) {
     &--index {
-      padding-top: 159px;
+      padding-top: 95px;
+      min-height: 682px;
     }
 
     &::after {
       background-repeat: repeat-x;
-      width: 100%;
+      width: calc(100% + 100px);
       height: 40px;
       background-size: contain;
-      bottom: -21px;
+      bottom: -22px;
+      left: -50px;
     }
 
     &--simple {
-      padding-top: 4px;
-      min-height: 256px;
+      padding-bottom: 59px;
+      min-height: 193px;
     }
 
     &--simple::after {
-      bottom: -17px;
+      bottom: -18px;
+      width: 100%;
+      left: 0;
     }
   }
 }

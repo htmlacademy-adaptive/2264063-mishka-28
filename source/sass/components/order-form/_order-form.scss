@@ -46,7 +46,7 @@
 
   &--tel,
   &--email {
-    padding: 6px 0 35px;
+    padding: 6px 0 34px;
   }
 
   &--tel {
@@ -60,7 +60,7 @@
   &--email {
     .order-form__title {
       @media (min-width: $tablet-width) {
-        bottom: -37px;
+        bottom: -34px;
       }
     }
   }
@@ -78,7 +78,7 @@
   @media (min-width: $tablet-width) {
     border: none;
     display: grid;
-    grid-template-columns: 168px 1fr;
+    grid-template-columns: 167px 1fr;
     padding: 45px 0 49px;
 
     &--username {
@@ -90,8 +90,8 @@
     }
 
     &--tel {
-      padding-top: 32px;
-      padding-bottom: 5px;
+      padding-top: 35px;
+      padding-bottom: 8px;
     }
 
     &--email {
@@ -115,7 +115,7 @@
 
 .order-form__title {
   padding-inline-start: 0;
-  padding-inline-end: 25px;
+  padding-inline-end: 22px;
   color: $primary-theme-color;
   font-weight: 700;
   font-size: 17px;
@@ -143,13 +143,21 @@
 
   &--radio {
     row-gap: 15px;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 3px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 1px;
+    }
   }
 
   &--colors {
     @media (min-width: $tablet-width) {
       flex-direction: row;
       flex-wrap: wrap;
-      column-gap: 36px;
+      column-gap: 37px;
     }
 
     @media (min-width: $desktop-width) {
@@ -168,7 +176,6 @@
 .order-form__item {
   @media (min-width: $tablet-width) {
     display: flex;
-    column-gap: 25px;
   }
 
   &--colors {
