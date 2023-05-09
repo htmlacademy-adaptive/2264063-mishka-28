@@ -54,6 +54,7 @@
 
   &--primary:not(&--disabled):active {
     color: rgba($third-font-color, $element-down-opacity);
+    background-color: $primary-font-color;
   }
 
   &:disabled,
